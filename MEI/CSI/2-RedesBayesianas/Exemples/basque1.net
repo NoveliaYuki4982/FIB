@@ -1,0 +1,78 @@
+net
+{
+	propagationenginegenerator1791944048146838126L = "edu.ucla.belief.approx.BeliefPropagationSettings@690bfea8";
+	recoveryenginegenerator6944530267470113528l = "edu.ucla.util.SettingsImpl@7afe0fec";
+	node_size = (130.0 55.0);
+	rcenginegenerator1317510038576835557L = "edu.ucla.belief.inference.RCSettings@66b15258";
+}
+
+node Shot2
+{
+	states = ("yes" "no" );
+	position = (425 -198);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable2";
+	label = "Shot2";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node variable1
+{
+	states = ("yes" "no" );
+	position = (274 -195);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable1";
+	label = "Shot1";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node Shot3
+{
+	states = ("yes" "no" );
+	position = (585 -197);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable3";
+	label = "Shot3";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node Jugador
+{
+	states = ("j1" "j2" "j3" );
+	position = (408 -57);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "Jugador";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+potential ( Shot2 | Jugador )
+{
+	data = ((	0.9	0.1	)
+		(	0.5	0.5	)
+		(	0.2	0.8	));
+}
+potential ( variable1 | Jugador )
+{
+	data = ((	0.9	0.1	)
+		(	0.5	0.5	)
+		(	0.2	0.8	));
+}
+potential ( Shot3 | Jugador )
+{
+	data = ((	0.9	0.1	)
+		(	0.5	0.5	)
+		(	0.2	0.8	));
+}
+potential ( Jugador | )
+{
+	data = (	0.07692307692307693	0.15384615384615385	0.7692307692307693	);
+}

@@ -1,0 +1,31 @@
+int: m = 1;  % Number of LINACs
+int: s = 3;  % Number of sessions per patient
+int: p = 1;  % Number of patients
+
+set of int: LINAC = 1..m;
+set of int: DAY = 1..21;  % 3 weeks
+set of int: PACIENTE = 1..p;
+set of int: SESION = 1..s;
+
+% Availability of each LINAC per day (in units of 15 minutes)
+array[LINAC, DAY] of 0..CAPACITY: disponible = [
+  % LINAC 1
+  48, 48, 48, 48, 48, 0, 0,    % Week 1 (Mon-Sun)
+  48, 48, 48, 48, 48, 0, 0,    % Week 2
+  48, 48, 48, 48, 48, 0, 0     % Week 3
+];
+
+% Day of the week when the request was made (1..5)
+array[PACIENTE] of 1..5: solicitud = [1];  % Patient requested on Monday
+
+% Duration of each session (in units of 15 minutes)
+array[PACIENTE, SESION] of int: duracion = [
+  % Patient 1
+  4, 4, 4  % Sessions of 1 hour each
+];
+
+% Ideal days between sessions
+array[PACIENTE, SESION] of int: separacion = [
+  % Patient 1
+  0, 2, 2  % First session on request day, then 2 days apart
+];

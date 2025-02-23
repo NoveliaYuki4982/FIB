@@ -1,0 +1,430 @@
+net
+{
+	propagationenginegenerator1791944048146838126L = "edu.ucla.belief.approx.BeliefPropagationSettings@28236b1d";
+	recoveryenginegenerator6944530267470113528l = "edu.ucla.util.SettingsImpl@5a4f0103";
+	node_size = (130 55);
+}
+
+node team3_wins_round2
+{
+	states = ("wins0" "wins1" "wins2" );
+	position = (399 -274);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable11";
+	label = "team3_wins_round2";
+	excludepolicy = "include whole CPT";
+}
+node team5_v_team6
+{
+	states = ("team5" "team6" );
+	position = (896 -66);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable3";
+	label = "team5_v_team6";
+	excludepolicy = "include whole CPT";
+}
+node team5_v_team7
+{
+	states = ("team5" "team7" );
+	position = (1087 -67);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable3";
+	label = "team5_v_team7";
+	excludepolicy = "include whole CPT";
+}
+node team4_wins_round2
+{
+	states = ("wins0" "wins1" "wins2" );
+	position = (394 -368);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable11";
+	label = "team4_wins_round2";
+	excludepolicy = "include whole CPT";
+}
+node final
+{
+	states = ("team1" "team2" "team3" "team4" "team5" "team6" "team7" "team8" );
+	position = (683 -769);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "final";
+	excludepolicy = "include whole CPT";
+}
+node team2_wins_round2
+{
+	states = ("wins0" "wins1" "wins2" );
+	position = (396 -190);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable11";
+	label = "team2_wins_round2";
+	excludepolicy = "include whole CPT";
+}
+node semifinal2
+{
+	states = ("team5" "team6" "team7" "team8" );
+	position = (831 -690);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable2";
+	label = "semifinal2";
+	excludepolicy = "include whole CPT";
+}
+node winner_group1
+{
+	states = ("team2" "team3" "team4" );
+	position = (523 -560);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable9";
+	label = "winner_group1";
+	excludepolicy = "include whole CPT";
+}
+node team4_wins_round1
+{
+	states = ("wins0" "wins1" );
+	position = (129 -366);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable11";
+	label = "team4_wins_round1";
+	excludepolicy = "include whole CPT";
+}
+node team6_wins_round2
+{
+	states = ("wins0" "wins1" "wins2" );
+	position = (1237 -269);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable11";
+	label = "team6_wins_round2";
+	excludepolicy = "include whole CPT";
+}
+node team2_v_team3
+{
+	states = ("team2" "team3" );
+	position = (132 -65);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable3";
+	label = "team2_v_team3";
+	excludepolicy = "include whole CPT";
+}
+node team2_wins_round1
+{
+	states = ("wins0" "wins1" );
+	position = (134 -191);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable11";
+	label = "team2_wins_round1";
+	excludepolicy = "include whole CPT";
+}
+node team7_wins_round1
+{
+	states = ("wins0" "wins1" );
+	position = (967 -361);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable11";
+	label = "team7_wins_round1";
+	excludepolicy = "include whole CPT";
+}
+node winner_group2
+{
+	states = ("team5" "team6" "team7" );
+	position = (834 -561);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable9";
+	label = "winner_group2";
+	excludepolicy = "include whole CPT";
+}
+node team5_wins_round1
+{
+	states = ("wins0" "wins1" );
+	position = (972 -186);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable11";
+	label = "team5_wins_round1";
+	excludepolicy = "include whole CPT";
+}
+node team2_v_team4
+{
+	states = ("team2" "team4" );
+	position = (302 -66);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable3";
+	label = "team2_v_team4";
+	excludepolicy = "include whole CPT";
+}
+node team6_wins_round1
+{
+	states = ("wins0" "wins1" );
+	position = (972 -268);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable11";
+	label = "team6_wins_round1";
+	excludepolicy = "include whole CPT";
+}
+node team6_v_team7
+{
+	states = ("team6" "team7" );
+	position = (1278 -72);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable3";
+	label = "team6_v_team7";
+	excludepolicy = "include whole CPT";
+}
+node team3_wins_round1
+{
+	states = ("wins0" "wins1" );
+	position = (134 -273);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable11";
+	label = "team3_wins_round1";
+	excludepolicy = "include whole CPT";
+}
+node team7_wins_round2
+{
+	states = ("wins0" "wins1" "wins2" );
+	position = (1232 -363);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable11";
+	label = "team7_wins_round2";
+	excludepolicy = "include whole CPT";
+}
+node semifinal1
+{
+	states = ("team1" "team2" "team3" "team4" );
+	position = (520 -694);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable1";
+	label = "semifinal1";
+	excludepolicy = "include whole CPT";
+}
+node team3_v_team4
+{
+	states = ("team3" "team4" );
+	position = (474 -66);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable3";
+	label = "team3_v_team4";
+	excludepolicy = "include whole CPT";
+}
+node team5_wins_round2
+{
+	states = ("wins0" "wins1" "wins2" );
+	position = (1234 -185);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable11";
+	label = "team5_wins_round2";
+	excludepolicy = "include whole CPT";
+}
+potential ( team3_wins_round2 | team3_wins_round1 team3_v_team4 )
+{
+	data = (((	0.0	1.0	0.0	)
+		(	1.0	0.0	0.0	))
+		((	0.0	0.0	1.0	)
+		(	0.0	1.0	0.0	)));
+}
+potential ( team5_v_team6 | )
+{
+	data = (	0.3	0.7	);
+}
+potential ( team5_v_team7 | )
+{
+	data = (	0.55	0.45	);
+}
+potential ( team4_wins_round2 | team4_wins_round1 team3_v_team4 )
+{
+	data = (((	1.0	0.0	0.0	)
+		(	0.0	1.0	0.0	))
+		((	0.0	1.0	0.0	)
+		(	0.0	0.0	1.0	)));
+}
+potential ( final | semifinal1 semifinal2 )
+{
+	data = (((	0.65	0.0	0.0	0.0	0.35	0.0	0.0	0.0	)
+		(	0.45	0.0	0.0	0.0	0.0	0.55	0.0	0.0	)
+		(	0.7	0.0	0.0	0.0	0.0	0.0	0.3	0.0	)
+		(	0.35	0.0	0.0	0.0	0.0	0.0	0.0	0.65	))
+		((	0.0	0.55	0.0	0.0	0.45	0.0	0.0	0.0	)
+		(	0.0	0.35	0.0	0.0	0.0	0.65	0.0	0.0	)
+		(	0.0	0.6	0.0	0.0	0.0	0.0	0.4	0.0	)
+		(	0.0	0.25	0.0	0.0	0.0	0.0	0.0	0.75	))
+		((	0.0	0.0	0.6	0.0	0.4	0.0	0.0	0.0	)
+		(	0.0	0.0	0.4	0.0	0.0	0.6	0.0	0.0	)
+		(	0.0	0.0	0.65	0.0	0.0	0.0	0.35	0.0	)
+		(	0.0	0.0	0.3	0.0	0.0	0.0	0.0	0.7	))
+		((	0.0	0.0	0.0	0.75	0.25	0.0	0.0	0.0	)
+		(	0.0	0.0	0.0	0.55	0.0	0.45	0.0	0.0	)
+		(	0.0	0.0	0.0	0.8	0.0	0.0	0.2	0.0	)
+		(	0.0	0.0	0.0	0.45	0.0	0.0	0.0	0.55	)));
+}
+potential ( team2_wins_round2 | team2_wins_round1 team2_v_team4 )
+{
+	data = (((	0.0	1.0	0.0	)
+		(	1.0	0.0	0.0	))
+		((	0.0	0.0	1.0	)
+		(	0.0	1.0	0.0	)));
+}
+potential ( semifinal2 | winner_group2 )
+{
+	data = ((	0.2	0.0	0.0	0.8	)
+		(	0.0	0.4	0.0	0.6	)
+		(	0.0	0.0	0.15	0.85	));
+}
+potential ( winner_group1 | team2_wins_round2 team3_wins_round2 team4_wins_round2 )
+{
+	data = ((((	0.3333	0.3334	0.3333	)
+		(	0.0	0.0	1.0	)
+		(	0.0	0.0	1.0	))
+		((	0.0	1.0	0.0	)
+		(	0.0	0.5	0.5	)
+		(	0.0	0.0	1.0	))
+		((	0.0	1.0	0.0	)
+		(	0.0	1.0	0.0	)
+		(	0.0	0.5	0.5	)))
+		(((	1.0	0.0	0.0	)
+		(	0.5	0.0	0.5	)
+		(	0.0	0.0	1.0	))
+		((	0.5	0.5	0.0	)
+		(	0.3333	0.3334	0.3333	)
+		(	0.0	0.0	1.0	))
+		((	0.0	1.0	0.0	)
+		(	0.0	1.0	0.0	)
+		(	0.0	0.5	0.5	)))
+		(((	1.0	0.0	0.0	)
+		(	1.0	0.0	0.0	)
+		(	0.5	0.0	0.5	))
+		((	1.0	0.0	0.0	)
+		(	1.0	0.0	0.0	)
+		(	0.5	0.0	0.5	))
+		((	0.5	0.5	0.0	)
+		(	0.5	0.5	0.0	)
+		(	0.3333	0.3334	0.3333	))));
+}
+potential ( team4_wins_round1 | team2_v_team4 )
+{
+	data = ((	1.0	0.0	)
+		(	0.0	1.0	));
+}
+potential ( team6_wins_round2 | team6_wins_round1 team6_v_team7 )
+{
+	data = (((	0.0	1.0	0.0	)
+		(	1.0	0.0	0.0	))
+		((	0.0	0.0	1.0	)
+		(	0.0	1.0	0.0	)));
+}
+potential ( team2_v_team3 | )
+{
+	data = (	0.45	0.55	);
+}
+potential ( team2_wins_round1 | team2_v_team3 )
+{
+	data = ((	0.0	1.0	)
+		(	1.0	0.0	));
+}
+potential ( team7_wins_round1 | team5_v_team7 )
+{
+	data = ((	1.0	0.0	)
+		(	0.0	1.0	));
+}
+potential ( winner_group2 | team5_wins_round2 team6_wins_round2 team7_wins_round2 )
+{
+	data = ((((	0.3333	0.3334	0.3333	)
+		(	0.0	0.0	1.0	)
+		(	0.0	0.0	1.0	))
+		((	0.0	1.0	0.0	)
+		(	0.0	0.5	0.5	)
+		(	0.0	0.0	1.0	))
+		((	0.0	1.0	0.0	)
+		(	0.0	1.0	0.0	)
+		(	0.0	0.5	0.5	)))
+		(((	1.0	0.0	0.0	)
+		(	0.5	0.0	0.5	)
+		(	0.0	0.0	1.0	))
+		((	0.5	0.5	0.0	)
+		(	0.3333	0.3334	0.3333	)
+		(	0.0	0.0	1.0	))
+		((	0.0	1.0	0.0	)
+		(	0.0	1.0	0.0	)
+		(	0.0	0.5	0.5	)))
+		(((	1.0	0.0	0.0	)
+		(	1.0	0.0	0.0	)
+		(	0.5	0.0	0.5	))
+		((	1.0	0.0	0.0	)
+		(	1.0	0.0	0.0	)
+		(	0.5	0.0	0.5	))
+		((	0.5	0.5	0.0	)
+		(	0.5	0.5	0.0	)
+		(	0.3333	0.3334	0.3333	))));
+}
+potential ( team5_wins_round1 | team5_v_team6 )
+{
+	data = ((	0.0	1.0	)
+		(	1.0	0.0	));
+}
+potential ( team2_v_team4 | )
+{
+	data = (	0.3	0.7	);
+}
+potential ( team6_wins_round1 | team5_v_team6 )
+{
+	data = ((	1.0	0.0	)
+		(	0.0	1.0	));
+}
+potential ( team6_v_team7 | )
+{
+	data = (	0.75	0.25	);
+}
+potential ( team3_wins_round1 | team2_v_team3 )
+{
+	data = ((	1.0	0.0	)
+		(	0.0	1.0	));
+}
+potential ( team7_wins_round2 | team7_wins_round1 team6_v_team7 )
+{
+	data = (((	1.0	0.0	0.0	)
+		(	0.0	1.0	0.0	))
+		((	0.0	1.0	0.0	)
+		(	0.0	0.0	1.0	)));
+}
+potential ( semifinal1 | winner_group1 )
+{
+	data = ((	0.6	0.4	0.0	0.0	)
+		(	0.55	0.0	0.45	0.0	)
+		(	0.4	0.0	0.0	0.6	));
+}
+potential ( team3_v_team4 | )
+{
+	data = (	0.35	0.65	);
+}
+potential ( team5_wins_round2 | team5_wins_round1 team5_v_team7 )
+{
+	data = (((	0.0	1.0	0.0	)
+		(	1.0	0.0	0.0	))
+		((	0.0	0.0	1.0	)
+		(	0.0	1.0	0.0	)));
+}

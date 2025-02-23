@@ -1,0 +1,241 @@
+net
+{
+	propagationenginegenerator1791944048146838126L = "edu.ucla.belief.approx.BeliefPropagationSettings@19a808d8";
+	recoveryenginegenerator6944530267470113528l = "edu.ucla.util.SettingsImpl@bfe4ebe";
+	node_size = (130.0 55.0);
+	rcenginegenerator1317510038576835557L = "edu.ucla.belief.inference.RCSettings@6f3e3002";
+}
+
+node Age
+{
+	states = ("A10" "A11" "A12" );
+	position = (593 -80);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable5";
+	label = "Age";
+	excludepolicy = "include whole CPT";
+}
+node ShoeSize
+{
+	states = ("S38" "S39" "S40" );
+	position = (525 -188);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable6";
+	label = "ShoeSize";
+	excludepolicy = "include whole CPT";
+}
+node Test_paste0
+{
+	states = ("Positivo" "Negativo" );
+	position = (938 -323);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable1";
+	label = "Test";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node Covid_paste0
+{
+	states = ("SI" "NO" );
+	position = (938 -208);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "Covid";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node Success
+{
+	states = ("No" "Success" "Celebrity" );
+	position = (615 -463);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable8";
+	label = "Success";
+	excludepolicy = "include whole CPT";
+}
+node Smoke
+{
+	states = ("Yes" "NO" );
+	position = (330 -190);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable3";
+	label = "Smoke";
+	excludepolicy = "include whole CPT";
+}
+node Reading
+{
+	states = ("Bad" "Interm" "Good" );
+	position = (673 -191);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable7";
+	label = "Reading";
+	excludepolicy = "include whole CPT";
+}
+node Symptoms
+{
+	states = ("Yes" "No" );
+	position = (1073 -255);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable11";
+	label = "Symptoms";
+	excludepolicy = "include whole CPT";
+}
+node Test
+{
+	states = ("Positivo" "Negativo" );
+	position = (108 -194);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable1";
+	label = "Test";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node Talent
+{
+	states = ("No" "Average" "VeryMuch" );
+	position = (527 -389);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable9";
+	label = "Talent";
+	excludepolicy = "include whole CPT";
+}
+node Fire
+{
+	states = ("Yes" "NO" );
+	position = (333 -79);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable2";
+	label = "Fire";
+	excludepolicy = "include whole CPT";
+}
+node Beauty
+{
+	states = ("No" "Average" "VeryMuch" );
+	position = (711 -389);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable10";
+	label = "Beauty";
+	excludepolicy = "include whole CPT";
+}
+node Covid
+{
+	states = ("SI" "NO" );
+	position = (108 -79);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "Covid";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node Alarm
+{
+	states = ("Yes" "NO" );
+	position = (327 -299);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable4";
+	label = "Alarm";
+	excludepolicy = "include whole CPT";
+}
+potential ( Age | )
+{
+	data = (	0.3333333333333333	0.3333333333333333	0.3333333333333333	);
+}
+potential ( ShoeSize | Age )
+{
+	data = ((	0.5	0.3	0.2	)
+		(	0.25	0.5	0.25	)
+		(	0.2	0.3	0.5	));
+}
+potential ( Test_paste0 | Covid_paste0 Symptoms )
+{
+	data = (((	0.655	0.345	)
+		(	0.4	0.6	))
+		((	0.001	0.999	)
+		(	0.001	0.999	)));
+}
+potential ( Covid_paste0 | )
+{
+	data = (	0.05	0.95	);
+}
+potential ( Success | Talent Beauty )
+{
+	data = (((	0.9989	0.001	1.0E-4	)
+		(	0.989	0.01	0.001	)
+		(	0.89	0.1	0.01	))
+		((	0.989	0.01	0.001	)
+		(	0.89	0.1	0.01	)
+		(	0.45	0.5	0.05	))
+		((	0.89	0.1	0.01	)
+		(	0.0	0.9090909090909091	0.09090909090909091	)
+		(	0.1	0.7	0.2	)));
+}
+potential ( Smoke | Fire )
+{
+	data = ((	0.99	0.01	)
+		(	0.001	0.999	));
+}
+potential ( Reading | Age )
+{
+	data = ((	0.5	0.3	0.2	)
+		(	0.25	0.5	0.25	)
+		(	0.2	0.3	0.5	));
+}
+potential ( Symptoms | Covid_paste0 )
+{
+	data = ((	0.8	0.2	)
+		(	0.1	0.9	));
+}
+potential ( Test | Covid )
+{
+	data = ((	0.655	0.345	)
+		(	0.001	0.999	));
+}
+potential ( Talent | )
+{
+	data = (	0.5	0.4	0.1	);
+}
+potential ( Fire | )
+{
+	data = (	0.001	0.999	);
+}
+potential ( Beauty | )
+{
+	data = (	0.3	0.6	0.1	);
+}
+potential ( Covid | )
+{
+	data = (	0.05	0.95	);
+}
+potential ( Alarm | Smoke )
+{
+	data = ((	0.9	0.1	)
+		(	0.1	0.9	));
+}

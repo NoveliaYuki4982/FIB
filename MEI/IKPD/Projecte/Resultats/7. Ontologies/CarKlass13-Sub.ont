@@ -1,0 +1,21 @@
+Vehicle: SUV, Midsize, Compact, Pickup, Sports
+
+SUV: SUV_Familiar, SUV_OffRoad
+SUV_Familiar: Mazda CX-5, Toyota Highlander, Hyundai Santa Fe
+SUV_OffRoad: Ford Explorer, Jeep Wrangler, Toyota 4Runner
+
+Midsize: Midsize_Urbano, Midsize_Eficiente
+Midsize_Urbano: Honda Accord, Toyota Camry, Chevrolet Malibu
+Midsize_Eficiente: Mazda 6, Hyundai Sonata
+
+Compact: Compact_Urbano, Compact_Eficiente
+Compact_Urbano: Toyota Corolla, Honda Civic, Kia Forte
+Compact_Eficiente: Hyundai Elantra, Nissan Leaf, Chevrolet Bolt
+
+Pickup: Pickup_Trabajo, Pickup_TodoTerreno
+Pickup_Trabajo: Ford F-150, Chevrolet Silverado, RAM 1500
+Pickup_TodoTerreno: Toyota Tacoma, Nissan Frontier
+
+Sports: Sports_Lujo, Sports_Accesible
+Sports_Lujo: Porsche 911, BMW Serie 4, Audi R8
+Sports_Accesible: Chevrolet Corvette, Ford Mustang, Mazda MX-5 Miata

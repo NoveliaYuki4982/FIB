@@ -1,0 +1,184 @@
+net
+{
+	propagationenginegenerator1791944048146838126L = "edu.ucla.belief.approx.BeliefPropagationSettings@488525ee";
+	recoveryenginegenerator6944530267470113528l = "edu.ucla.util.SettingsImpl@f7e704b";
+	node_size = (130.0 55.0);
+}
+
+node HaSalido3
+{
+	states = ("state0" "state1" );
+	position = (333 -226);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable4";
+	label = "HaSalido3";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node Sale3
+{
+	states = ("state0" "state1" );
+	position = (335 -145);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable5";
+	label = "Sale3";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node HaSalido4
+{
+	states = ("state0" "state1" );
+	position = (487 -230);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable6";
+	label = "HaSalido4";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node HaSalido2
+{
+	states = ("state0" "state1" );
+	position = (188 -227);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable2";
+	label = "HaSalido2";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node Sale5
+{
+	states = ("state0" "state1" );
+	position = (634 -146);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable9";
+	label = "Sale5";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node Sale4
+{
+	states = ("state0" "state1" );
+	position = (475 -147);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable7";
+	label = "Sale4";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node HaSalido1
+{
+	states = ("state0" "state1" );
+	position = (42 -225);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "HaSalido1";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node Sale1
+{
+	states = ("state0" "state1" );
+	position = (41 -145);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable1";
+	label = "Sale1";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node HaSalido5
+{
+	states = ("state0" "state1" );
+	position = (640 -226);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable8";
+	label = "HaSalido5";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node Sale2
+{
+	states = ("state0" "state1" );
+	position = (187 -149);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable3";
+	label = "Sale2";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+potential ( HaSalido3 | HaSalido2 Sale2 )
+{
+	data = (((	1.0	0.0	)
+		(	0.0	1.0	))
+		((	0.0	1.0	)
+		(	0.0	1.0	)));
+}
+potential ( Sale3 | HaSalido3 )
+{
+	data = ((	0.6666666666666666	0.3333333333333333	)
+		(	1.0	0.0	));
+}
+potential ( HaSalido4 | HaSalido3 Sale3 )
+{
+	data = (((	1.0	0.0	)
+		(	0.0	1.0	))
+		((	0.0	1.0	)
+		(	0.0	1.0	)));
+}
+potential ( HaSalido2 | HaSalido1 Sale1 )
+{
+	data = (((	1.0	0.0	)
+		(	0.0	1.0	))
+		((	0.0	1.0	)
+		(	0.0	1.0	)));
+}
+potential ( Sale5 | HaSalido5 )
+{
+	data = ((	0.0	1.0	)
+		(	1.0	0.0	));
+}
+potential ( Sale4 | HaSalido4 )
+{
+	data = ((	0.5	0.5	)
+		(	1.0	0.0	));
+}
+potential ( HaSalido1 | )
+{
+	data = (	1.0	0.0	);
+}
+potential ( Sale1 | HaSalido1 )
+{
+	data = ((	0.8	0.2	)
+		(	1.0	0.0	));
+}
+potential ( HaSalido5 | HaSalido4 Sale4 )
+{
+	data = (((	1.0	0.0	)
+		(	0.0	1.0	))
+		((	0.0	1.0	)
+		(	0.0	1.0	)));
+}
+potential ( Sale2 | HaSalido2 )
+{
+	data = ((	0.75	0.25	)
+		(	1.0	0.0	));
+}

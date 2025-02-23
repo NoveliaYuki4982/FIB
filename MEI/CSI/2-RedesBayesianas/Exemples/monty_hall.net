@@ -1,0 +1,81 @@
+net
+{
+	HR_Monitor_InitStates = "5";
+	HR_Compile_Approximate = "0";
+	HR_Font_Italic = "0";
+	HR_Color_Decision = "17";
+	HR_Color_ContinuosChance = "48";
+	HR_Compile_TriangMethod = "0";
+	HR_Grid_GridShow = "0";
+	HR_Propagate_Auto = "1";
+	HR_Groups_GroupNames = "";
+	HR_Font_Weight = "400";
+	HR_Propagate_AutoNormal = "1";
+	HR_Groups_UserGroupsNo = "0";
+	HR_Monitor_OpenGraph = "0";
+	propagationenginegenerator1791944048146838126L = "edu.ucla.belief.approx.BeliefPropagationSettings@4162e276";
+	HR_Grid_GridSnap = "1";
+	HR_Font_Name = "Arial";
+	HR_Compile_Compress = "0";
+	node_size = (80.0 40.0);
+	HR_Groups_GroupColors = "";
+	HR_Monitor_AutoUpdGraph = "0";
+	HR_Zoom_ZoomFactor = "0";
+	HR_Compile_ApproxEpsilon = "0.00001";
+	HR_Propagate_AutoSum = "1";
+	HR_Font_Size = "-12";
+	HR_Color_DiscreteChance = "16";
+	HR_Color_Utility = "36";
+	HR_Monitor_InitSD = "2";
+	HR_Monitor_GraphPrecision = "100";
+	HR_Grid_Y = "10";
+	HR_Grid_X = "10";
+}
+
+node FirstSelection
+{
+	states = ("Door 1" "Door 2" "Door 3" );
+	position = (371 114);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	label = "";
+	excludepolicy = "include whole CPT";
+}
+node MontyOpens
+{
+	states = ("Door 1" "Door 2" "Door 3" );
+	position = (263 -8);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	label = "";
+	excludepolicy = "include whole CPT";
+}
+node Prize
+{
+	states = ("Door 1" "Door 2" "Door 3" );
+	position = (158 116);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	label = "";
+	excludepolicy = "include whole CPT";
+}
+potential ( FirstSelection | )
+{
+	data = (	0.3333333333333333	0.3333333333333333	0.3333333333333333	);
+}
+potential ( MontyOpens | FirstSelection Prize )
+{
+	data = (((	0.0	0.5	0.5	)
+		(	0.0	0.0	1.0	)
+		(	0.0	1.0	0.0	))
+		((	0.0	0.0	1.0	)
+		(	0.5	0.0	0.5	)
+		(	1.0	0.0	0.0	))
+		((	0.0	1.0	0.0	)
+		(	1.0	0.0	0.0	)
+		(	0.5	0.5	0.0	)));
+}
+potential ( Prize | )
+{
+	data = (	0.3333333333333333	0.3333333333333333	0.3333333333333333	);
+}

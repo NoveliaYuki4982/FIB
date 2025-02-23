@@ -1,0 +1,93 @@
+net
+{
+	propagationenginegenerator1791944048146838126L = "edu.ucla.belief.approx.BeliefPropagationSettings@63425e17";
+	recoveryenginegenerator6944530267470113528l = "edu.ucla.util.SettingsImpl@1a2f6aea";
+	jenginegenerator6060830225489488864L = "edu.ucla.belief.inference.JoinTreeSettings@4460cf12";
+	node_size = (130.0 55.0);
+	rcenginegenerator1317510038576835557L = "edu.ucla.belief.inference.RCSettings@527e21df";
+}
+
+node Pregn
+{
+	states = ("no" "yes" );
+	position = (162 -17);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "Pregn";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node Blood
+{
+	states = ("no" "yes" );
+	position = (180 -214);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable4";
+	label = "Blood";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node Progesterone
+{
+	states = ("no" "yes" );
+	position = (78 -104);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable1";
+	label = "Progesterone";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node Scanner
+{
+	states = ("no" "yes" );
+	position = (288 -108);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable2";
+	label = "Scanner";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node Urine
+{
+	states = ("no" "yes" );
+	position = (25 -213);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable3";
+	label = "Urine";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+potential ( Pregn | )
+{
+	data = (	0.13	0.87	);
+}
+potential ( Blood | Progesterone )
+{
+	data = ((	0.9	0.1	)
+		(	0.3	0.7	));
+}
+potential ( Progesterone | Pregn )
+{
+	data = ((	0.99	0.01	)
+		(	0.1	0.9	));
+}
+potential ( Scanner | Pregn )
+{
+	data = ((	0.99	0.01	)
+		(	0.1	0.9	));
+}
+potential ( Urine | Progesterone )
+{
+	data = ((	0.9	0.1	)
+		(	0.2	0.8	));
+}

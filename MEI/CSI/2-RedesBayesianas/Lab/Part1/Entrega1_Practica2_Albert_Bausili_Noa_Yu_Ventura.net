@@ -1,0 +1,55 @@
+net
+{
+	propagationenginegenerator1791944048146838126L = "edu.ucla.belief.approx.BeliefPropagationSettings@3ac63d47";
+	recoveryenginegenerator6944530267470113528l = "edu.ucla.util.SettingsImpl@7089a063";
+	node_size = (130 55);
+}
+
+node sem2
+{
+	states = ("Team3Win" "Team4Win" );
+	position = (77 -229);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable1";
+	label = "sem2";
+	excludepolicy = "include whole CPT";
+}
+node Final
+{
+	states = ("Team1Win" "Team2Win" "Team3Win" "Team4Win" );
+	position = (292 -139);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable2";
+	label = "Final";
+	excludepolicy = "include whole CPT";
+}
+node sem1
+{
+	states = ("Team1Win" "Team2Win" );
+	position = (81 -69);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "sem1";
+	excludepolicy = "include whole CPT";
+}
+potential ( sem2 | )
+{
+	data = (	0.5	0.5	);
+}
+potential ( Final | sem1 sem2 )
+{
+	data = (((	0.5	0.0	0.5	0.0	)
+		(	0.5	0.0	0.0	0.5	))
+		((	0.0	0.5	0.5	0.0	)
+		(	0.0	0.5	0.0	0.5	)));
+}
+potential ( sem1 | )
+{
+	data = (	0.5	0.5	);
+}

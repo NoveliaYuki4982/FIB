@@ -1,0 +1,55 @@
+net
+{
+	propagationenginegenerator1791944048146838126L = "edu.ucla.belief.approx.BeliefPropagationSettings@2d893c56";
+	recoveryenginegenerator6944530267470113528l = "edu.ucla.util.SettingsImpl@719a081c";
+	node_size = (130 55);
+	rcenginegenerator1317510038576835557L = "edu.ucla.belief.inference.RCSettings@70efac4";
+}
+
+node icecream
+{
+	states = ("yes" "no" );
+	position = (198 -249);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable2";
+	label = "icecream";
+	excludepolicy = "include whole CPT";
+}
+node Coin
+{
+	states = ("fair" "tricked" );
+	position = (193 -35);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "Coin";
+	excludepolicy = "include whole CPT";
+}
+node Flip
+{
+	states = ("head" "tail" );
+	position = (196 -141);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable1";
+	label = "Flip";
+	excludepolicy = "include whole CPT";
+}
+potential ( icecream | Flip )
+{
+	data = ((	0.9	0.1	)
+		(	0.1	0.9	));
+}
+potential ( Coin | )
+{
+	data = (	0.5	0.5	);
+}
+potential ( Flip | Coin )
+{
+	data = ((	0.5	0.5	)
+		(	1.0	0.0	));
+}
