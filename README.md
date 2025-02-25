@@ -4,7 +4,7 @@ This repository holds the contents of all the subjects I have done in my univers
 - Master's Degree in Informatics Engineering at UPC.
 
 | | |
-| -------- | ------- |
-| CSI  | SECS |
-| IKPD | SGI |
-| PEGTI | |
+| -------- | ------- | ------- |
+| CSI  | SECS | DGSI |
+| IKPD | SGI | |
+| PEGTI | ISDCM | |
