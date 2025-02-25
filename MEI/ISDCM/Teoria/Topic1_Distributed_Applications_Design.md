@@ -1,6 +1,6 @@
 # Topic 1: Distributed Applications Design
 
-**Presented by:** Jaime Delgado, DAC - UPC  
+**Teacher:** Jaime Delgado, DAC - UPC
 **Semester:** 2024/25 Q2  
 **Course Code:** ISDCM - Topic 1
 
