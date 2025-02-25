@@ -3,8 +3,10 @@ This repository holds the contents of all the subjects I have done in my univers
 - Bachelor's Degree in Informatics Engineering at Universitat Politècnica de Catalunya (UPC).
 - Master's Degree in Informatics Engineering at UPC.
 
-| | |
-| -------- | ------- | ------- |
-| CSI  | SECS | DGSI |
-| IKPD | SGI | |
-| PEGTI | ISDCM | |
+| Q1 | Q2 |
+| -------- | ------- |
+| CSI  | DGSI |
+| IKPD | ISDCM |
+| PEGTI | VPEI |
+| SECS | |
+| SGI | |
