@@ -26,8 +26,6 @@ Tornant a l'exemple anterior del local on es llogaven pel·lícules, ara no fa f
 ## Lab 1 (20/02/2025)
 Hem fet una pàgina web que rep un audio i transcriu la veu a text indicant qui ho ha dit usant dues IAs, una per la transcripció i una altra per detectar cada persona. La organització es diu [DGSI-UPC](https://github.com/DGSI-UPC) i el projecte en concret és [aquest](https://github.com/DGSI-UPC/Subtitle-Generator).
 
----
-
 ## Teoria 2 (25/02/2025)
 #### 1. Pila tecnològica
 Tota empresa té la seva **pila tecnològica** que sosté els seus fundaments. Per evitar que aquesta caigui, les bases han de ser ben sòlides i no han de dependre d'una sola persona, com va passar amb Internet sent sostingut per un senyor que vivia a Minnesota als anys 80.
@@ -42,6 +40,5 @@ També n'és un exemple la plataforma de la seguretat social d'Estats Units feta
 Precisament per aquest fet considero que prendre decisions és una tasca molt important que comporta molta responsabilitat, ja que determinarà el futur d'una empresa o organització. Fer-ho de la millor manera possible pensant en el seu futur fent servir la tecnologia més adequada i, si és possible, més moderna, és el més important.
 
 Per **alinear els interessos** dels empleats se'ls hi dóna una posició que impliqui la col·laboració entre ells. Per exemple, anomenant als empleats que despleguen les aplicacions *DevOps* aconseguim que treballin amb els desenvolupadors de l'aplicació per a fer-la funcionar adequadament en el desplegament.
-
 
 ## Lab 2 (27/02/2025)
