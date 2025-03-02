@@ -16,27 +16,48 @@
   - **Routers (Ri)**: Devices that forward data packets between networks.
 - **Structure**:
 
-![Internet Structure](/Images/Internet.png)
+![Internet Structure](Images/Internet.png)
 
 ### 1.2 Models and Communication
 #### 1.2.1 Models
 
-- **OSI Model**: A conceptual framework with seven layers:
-  1. **Physical**: Handles raw bit transmission over hardware.
-  2. **Data Link**: Manages node-to-node data transfer (e.g., Ethernet).
-  3. **Network**: Routes packets across networks (e.g., IP).
-  4. **Transport**: Ensures end-to-end communication (e.g., TCP, UDP).
-  5. **Session**: Manages sessions between applications.
-  6. **Presentation**: Translates data formats and handles encryption.
-  7. **Application**: Provides user interfaces and services (e.g., HTTP).
-  - **Note**: The Application, Presentation and Session layers resides only in the host, not in intermediate network devices.
+<table border="1">
+  <thead>
+    <tr>
+      <th>OSI model</th>
+      <th>Internet model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Physical</strong>: Handles raw bit transmission over hardware.</td>
+      <td><strong>Physical</strong>: Physical transmission medium.</td>
+    </tr>
+    <tr>
+      <td><strong>Data Link</strong>: Manages node-to-node data transfer (e.g., Ethernet).</td>
+      <td><strong>Network Access</strong>: Combines Data Link functionalities.</td>
+    </tr>
+    <tr>
+      <td><strong>Network</strong>: Routes packets across networks (e.g., IP).</td>
+      <td><strong>IP (Internet Protocol)</strong>: Routes datagrams across networks.</td>
+    </tr>
+    <tr>
+      <td><strong>Transport</strong>: Ensures end-to-end communication (e.g., TCP, UDP).</td>
+      <td><strong>Transport</strong>: TCP or UDP for reliable or fast data transfer.</td>
+    </tr>
+    <tr>
+      <td><strong>Session</strong>: Manages sessions between applications.</td>
+      <td rowspan="3"><strong>Application</strong>: Protocols like HTTP, FTP, SMTP..</td>
+    </tr>
+    <tr>
+      <td><strong>Presentation</strong>: Translates data formats and handles encryption.</td>
+    </tr>
+    <tr>
+      <td><strong>Application</strong>: Provides user interfaces and services (e.g., HTTP). Note: The Application, Presentation, and Session layers reside only in the host, not in intermediate network devices.</td>
+    </tr>
+  </tbody>
+</table>
 
-- **Internet Model**: A simplified five-layer model:
-  1. **Physical**: Physical transmission medium. 
-  2. **Network Access**: Combines Data Link functionalities.
-  3. **Transport**: TCP or UDP for reliable or fast data transfer.
-  4. **IP (Internet Protocol)**: Routes datagrams across networks.
-  5. **Application**: Protocols like HTTP, FTP, SMTP.
 
 > **Comparison**:
 >  - **Differences**: OSI and Internet models differ in layer count and structure. OSI has seven layers, while the Internet model has five. The Internet model's layers are not formalized as strictly as OSI.
