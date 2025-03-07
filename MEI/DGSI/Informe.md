@@ -42,3 +42,18 @@ Precisament per aquest fet considero que prendre decisions és una tasca molt im
 Per **alinear els interessos** dels empleats se'ls hi dóna una posició que impliqui la col·laboració entre ells. Per exemple, anomenant als empleats que despleguen les aplicacions *DevOps* aconseguim que treballin amb els desenvolupadors de l'aplicació per a fer-la funcionar adequadament en el desplegament.
 
 ## Lab 2 (27/02/2025)
+Hem creat una pàgina web que admet una URL pública. A partir d'aquesta URL investiga tots els links relacionats amb aquesta i llegeix els seus continguts per retornar-los en un Markdown bucket. El link al projecte és [aquest](https://github.com/DGSI-UPC/Web-to-Markdown).
+
+## Teoria 3 (4/3/2025)
+És molt important mantenir els programes per evitar l'obsolescència ja que els requeriments sempre canvien contínuament. El legacy code està en totes les empreses però a vegades és necessari mantenir-les perquè és l'únic codi que compleix aquesta necessitat. Això és el que passa actualment amb els ponts del Baix Llobregat i de Budapest.
+
+Une exemple de canvi de requisits és la matrícula de la FIB. Antigament es necessitaven setmanes per fer la matrícula, ara amb l'automatrícula només en un matí ja poden estar tots els estudiants matriculats.
+
+Com hem vist, saber els requisits que tindrà el codi és el més important de tot. Tot i així, no sempre és fàcil entendre'ls o explicar-los. En una empresa quan un client t'ha d'explicar el que vol és difícil entendre-ho perquè no sap res de tecnologia: són *mugglers*. PEr contrapartida, tu també ets un *muggler* per a ell, ja que tu no saps res de com funciona la seva empresa o la seva manera de fer negoci. És un problema de comunicació.
+
+Com els requisits i la tecnologia van canviant molt ràpidament no es pot aplicar el sistema *waterfall*, de manera que el 1998 es va crear la metodologia *agile*. Consisteix en fer un equip tots junts el client i el teu equip de l'empresa per tenir experiències conjuntes i entendre millor a l'altra persona.
+
+A partir d'agile va néixer SCRUM, el qual és un procés i per tant és molt poc eficient. No està pensat per ser eficient, sinó per controlar els treballadors. Amb això estic d'acord fins a cert punt, perquè haver d'escriure tickets, fer 10 mil reunions i tot és molt poc eficient i un pal. Però tenir un lloc on quedin clares les tasques que s'han de fer per seguir amb el projecte i saber quin company fa cada cosa per no repetir codi o treballar conjuntament.
+
+## Lab 3 (6/3/2025)
+Hem creat un programa que rep un text i n'indexa els continguts fent servir una IA d'embeddings. Aquest embeddings es guarden a chromaDB per a després poder buscar en aquesta base de dades. El model de IA que hem fet servir és text-embedding-3-small. El link del projecte és [aquest](https://github.com/DGSI-UPC/ChromaDB-Embedding).
