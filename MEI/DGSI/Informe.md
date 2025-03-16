@@ -57,3 +57,36 @@ A partir d'agile va néixer SCRUM, el qual és un procés i per tant és molt po
 
 ## Lab 3 (6/3/2025)
 Hem creat un programa que rep un text i n'indexa els continguts fent servir una IA d'embeddings. Aquest embeddings es guarden a chromaDB per a després poder buscar en aquesta base de dades. El model de IA que hem fet servir és text-embedding-3-small. El link del projecte és [aquest](https://github.com/DGSI-UPC/ChromaDB-Embedding).
+
+## Teoria 4 (11/3/2025)
+
+### 1. Skin in the Game
+El concepte de "Skin in the game" es fa evident en l'exemple dels romans arquitectes que dissenyaven ponts i els arquitectes de Babilònia. Aquests tenien una responsabilitat crucial pel disseny de les cases: si una casa dissenyada per un arquitecte babilònic causava la mort del fill del propietari, l'arquitecte era executat. Aquesta responsabilitat personal vinculada al seu treball reflecteix la idea que els professionals que prenen decisions també haurien de tenir un interès directe en els resultats d'aquestes decisions.
+
+En la crisi del 2008 a Espanya el govern va salvar als bancs per tal que el país no s’enfonsés, però a canvi no es va investigar per trobar els culpables ni la causa d’aquesta caiguda. D’aquesta manera, els banquers no tenien skin in the game, i això fa que en un futur, assegurat, una cosa com aquesta tornarà a passar, perquè ningú ha patit les males conseqüències d’aquestes decisions.
+
+D’aquí en podem extreure dos conceptes principals: els compromesos i els implicats. Una persona implicada seria un manager que porta diferents projectes, però una persona compromesa té skin in the game.
+
+### 2. Dades versus Informació
+L’exemple del semàfor és el més fàcil d’entendre per explicar la diferència entre dades i informació. Es poden distingir diversos components que formen la informació completa:
+
+| **Terme** | **Descripció** |
+|---------------|----------------|
+| **Dades** | Un semàfor taronja. |
+| **Regles** | En un semàfor taronja, segons el codi de circulació, s'ha de parar. |
+| **Context** | La interpretació del semàfor taronja varia depenent de la situació, com ara si hi ha càmera de trànsit o si estem a Alemanya. |
+| **Memòria** | A Alemanya, els conductors tendeixen a respectar sempre els semàfors. |
+| **Informació** | La informació inclou no només les dades (semàfor taronja), sinó també les regles a seguir, el context en què s'apliquen i la memòria sobre com els conductors actuen basant-se en experiències prèvies. |
+
+Així, les dades per si soles no són suficients per guiar una acció, sinó que cal el conjunt de regles, context i memòria per crear una veritable informació útil.
+
+### 3. Auditoria de Títols i la Validació Internacional
+En el passat, per garantir que els títols acadèmics fossin vàlids en altres països europeus, existien convenis entre universitats per reconèixer-los mútuament. Aquesta pràctica assegurava que els títols obtinguts en un país fossin acceptats en altres regions, facilitant la mobilitat laboral i acadèmica a nivell europeu. L'auditoria de títols es referia a aquest procés de revisió i validació, que garantitzava que els títols complien els estàndards internacionals.
+
+En l'actualitat, la qualitat de l'educació i els títols s'assegura mitjançant estàndards, tests i certificacions, que són fonamentals per assegurar la seva validesa a nivell global. Això permet una millor integració i reconeixement de les formacions professionals entre diferents països.
+
+### 4. Organització d'Empresa: Bar de la Fib
+La gestió i organització d'una empresa poden veure's reflectides en el model d'un bar, com seria el cas del Bar de la FIB (Facultat d'Informàtica de Barcelona). En aquest entorn, la gestió empresarial es fa d'una manera col·laborativa, on cada membre de l'equip té responsabilitats definides i l'objectiu comú és l'èxit del negoci. Les dinàmiques internes de l'organització es poden estudiar mitjançant el model d'un bar, on la coordinació, l'estructura i la responsabilitat de cada element dins l'organització són essencials per al bon funcionament.
+
+## Lab 4 (13/3/2025)
+Hem fet un chatbot que funciona per línia de comandes que rep preguntes sobre la FIb i les respon. Ho fa gràcies al **RAG** (Retrieval Augmented Generation) que hem creat fent servir la pràctica anterior, que consistia en indexar la informació de la pàgina web de la FIB en chromaDB i obtenir-la en format markdown. Per més informació visitar aquest [link](https://github.com/DGSI-UPC/llm-chat-rag).
