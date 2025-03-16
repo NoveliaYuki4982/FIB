@@ -20,15 +20,19 @@
   - **Deletion**: Removing multimedia content when no longer needed.
 
 ### 1.2 **Elements Relevant Throughout the Life-cycle**:
-  - **Identification**: Assigning unique identifiers to content.
-  - **Description (Metadata)**: Data describing the content (e.g., title, author).
-  - **Coding**: Encoding content into specific formats.
-  - **Transfer (Comm. protocols)**: Moving content using communication protocols.
-  - **Search**: Mechanisms to locate content.
-  - **Business Models**: Strategies for monetizing or managing content.
-  - **Digital Rights Management**: Protecting content usage rights.
-  - **Information (Formats: Metadata + Resources)**: Combining metadata with actual content.
-  - **Protocols (Dialogue, Operations)**: Rules for interaction and operations on content.
+
+| Concept | Description |
+|-------|---------------|
+| **Identification** | Assigning unique identifiers to content. |
+| **Description (Metadata)** | Data describing the content (e.g., title, author). |
+| **Coding** | Encoding content into specific formats. |
+| **Transfer (Comm. protocols)** | Moving content using communication protocols. |
+| **Search** | Mechanisms to locate content.                    |
+| **Business Models** | Strategies for monetizing or managing content. |
+| **Digital Rights Management** | Protecting content usage rights. |
+| **Information (Formats: Metadata + Resources)** | Combining metadata with actual content. |
+| **Protocols (Dialogue, Operations)** | Rules for interaction and operations on content. |
+
 
 ## 2. Content Architectures
 - **Monomedia** vs. **Multimedia**:
@@ -208,9 +212,12 @@
 
 - Two-dimensional content type (space: width and height).
 - **Still Images**:
-  - **Captured/Scanned**: **Raster (Pixels, Bitmap)**: Grid of pixels.
-  - **Synthetized**: **Vector**: Geometric objects (lines, polygons, circles, etc.).
-- **Vector Graphics Formats**:
+  - **Captured**/**Scanned** - **Synthesized**
+
+  | **Raster (Pixels, Bitmap)** | **Vector Graphics** |
+  | -------------------- | --------------- |
+  | Grid of pixels. | Geometric objects (lines, polygons, circles, etc.) |
+#### 3.3.1 **Vector Graphics**
   - **Standards**:
     - CGM (Computer Graphics Metafile): ISO/IEC 8632, `image/cgm`.
     - SVG (Scalable Vector Graphics): W3C, XML-based, `image/svg+xml`.
@@ -219,46 +226,47 @@
     - Adobe Illustrator: `application/illustrator`.
     - CorelDRAW: `application/coreldraw`.
     - EPS (Encapsulated PostScript): `application/postscript`.
-- **Raster Image Formats**:
-  - **ISO Standards**:
-    - JPEG: ISO/IEC 10918, `image/jpeg` (1992-1994).
-    - JPEG2000: ISO/IEC 15444, `image/jpeg2000` (2001-2019).
-    - JPEG XR: ISO/IEC 29199, `image/vnd.ms-photo`, `image/jxr` (2009-2020).
-    - JPEG XT: ISO/IEC 18477, includes HDR support.
-    - JPEG XL: ISO/IEC 18181, improved quality and compression.
-  - **Professional Use**:
-    - DPX: ANSI/SMPTE, `image/dpx`.
-    - RAW: raw image formats
-    - ISO 12234-2, **TIFF/EP** (2001).
-  - **Individual Use**:
-    - BMP: Microsoft, `image/bmp` (1986).
-    - GIF: CompuServe, `image/gif` (1987, patents expired 2003).
-    - WebP: Google, `image/webp` (2010, based on VP8).
-    - BPG: `image/bpg` (2014).
-    - FLIF (Free Lossless Image Format): `image/flif` (2015)
-  - **File Formats/Containers**:
-    - JFIF: JPEG File Interchange Format.
-    - PNG:
-      - **Donated** to **W3C** ('96)
-      - ISO/IEC 15948, `image/png` (2004).
-      - **Datastream** & associated file format. `image/png`.
-    - TIFF: Adobe v.6 (1992), `image/tiff`.
-  - **New/Future Formats**:
-    - AOMedia vs MPEG
-      - AVIF vs HEIF
-        - AVIF: AV1 Image File Format. AOMedia
-        - HEIF: Image File Format of HEVC. MPEG
-    - HEIC: An implementation of HEIF mainly supported by Apple.
-    - WebP: Includes a RIFF-based container from Google. Web-oriented.
-    - JPEG-XL: ISO/IEC 18181, web-oriented, JPEG-1 compatible.
-- **Key Concept**:
+#### 3.3.2 **Raster Image**
+- Bits per pixel (**depth**).
+- **ISO Standards**:
+  - JPEG: ISO/IEC 10918, `image/jpeg` (1992-1994).
+  - JPEG2000: ISO/IEC 15444, `image/jpeg2000` (2001-2019).
+  - JPEG XR: ISO/IEC 29199, `image/vnd.ms-photo`, `image/jxr` (2009-2020).
+  - JPEG XT: ISO/IEC 18477, includes HDR support.
+  - JPEG XL: ISO/IEC 18181, improved quality and compression.
+- **Professional Use**:
+  - DPX: ANSI/SMPTE, `image/dpx`.
+  - RAW: raw image formats
+  - ISO 12234-2, **TIFF/EP** (2001).
+- **Individual Use**:
+  - BMP: Microsoft, `image/bmp` (1986).
+  - GIF: CompuServe, `image/gif` (1987, patents expired 2003).
+  - WebP: Google, `image/webp` (2010, based on VP8).
+  - BPG: `image/bpg` (2014).
+  - FLIF (Free Lossless Image Format): `image/flif` (2015)
+- **File Formats/Containers**:
+  - JFIF: JPEG File Interchange Format.
+  - PNG:
+    - **Donated** to **W3C** ('96)
+    - ISO/IEC 15948, `image/png` (2004).
+    - **Datastream** & associated file format. `image/png`.
+  - TIFF: Adobe v.6 (1992), `image/tiff`.
+- **New/Future Formats**:
+  - AOMedia vs MPEG
+    - AVIF vs HEIF
+      - AVIF: AV1 Image File Format. AOMedia
+      - HEIF: Image File Format of HEVC. MPEG
+  - HEIC: An implementation of HEIF mainly supported by Apple.
+  - WebP: Includes a RIFF-based container from Google. Web-oriented.
+  - JPEG-XL: ISO/IEC 18181, web-oriented, JPEG-1 compatible.
+#### 3.3.3 **Key Concept**:
 Image formats originally where complettelly separated from Video formats, but lately it has been found that the encodings made for Videos are better for encoding images.
   - Some Image formats that come from video:
     - **AVIF: Comes from AV1**
     - **HEIF: Comes from HEVC.**
     - **Webp: Comes from VP8**
-### 3.4 Video
 
+### 3.4 Video
 - Three-dimensional content type (2D space + time).
 - Characteristics:
   - **Moving Images** -> Captured
@@ -289,3 +297,71 @@ Image formats originally where complettelly separated from Video formats, but la
     - MPEG-5 EVC (Essential Video Coding): ISO/IEC 23094-1, licensing-friendly.
     - LCEVC (Low Complexity Enhancement Video Coding): ISO/IEC 23094-2.
     - Emerging: Coding for machines, lenslet video coding.
+
+## 4. Structures and Containers
+
+### 4.1 **Fundamental Concepts**
+- **Structures:** Logical and physical organization of multimedia content
+- **Containers:** File formats that encapsulate multiple multimedia streams
+- **Purpose:** Combine multiple streams with metadata and synchronization information
+- **Key Container Elements:** Audio/video streams, synchronization info, metadata, complementary info (subtitles, chapters)
+
+### 4.2 **Major Multimedia Container Standards**
+- **QuickTime File Format:** Developed by Apple, basis for MPEG-4 file format
+- **MPEG-4 Part 14 (MP4):** ISO/IEC 14496-14, widely used for audio/video
+- **Matroska (MKV):** Open-source container with extensive support for multiple streams
+- **WebM:** Based on Matroska, optimized for web use (VP8/VP9 + Vorbis/Opus)
+- **AVI:** Microsoft's early container format (limited compared to modern formats)
+- **3GPP:** Mobile-oriented container format
+- **MPEG-TS:** Designed for broadcasting and streaming
+
+### 4.3 **ISO Base Media File Format (ISOBMFF)**
+- Standardized as ISO/IEC 14496-12 (6th edition)
+- Received Technology & Engineering EmmyÂ® Award 2021
+- **Detailed Box Structure:**
+  - **`ftyp`:** Defines file type and compatibility (one per file)
+  - **`moov`:** Contains presentation metadata with sub-boxes:
+    - `mvhd` (Movie Header): Duration, timescale, etc.
+    - `trak` (Track): Metadata for individual streams with components:
+      - `hdlr` (Handler): Indicates stream type
+      - `dinf/dref`: Data location information
+      - `stbl` (Sample Table): Sample-specific metadata
+  - **`mdat`:** Contains actual encoded media data
+
+## 5. Metadata
+"Data about data" or "data about multimedia resources". Components:
+  - Schema: Categories of information
+  - Vocabulary: Specific words/values used
+  - Conceptual Model: Relationships between information elements
+  - Content Standard: Rules for entering information
+  - Encoding: Presentation format (e.g., XML)
+
+### 5.1 **Classification**
+- By what is described (audio, video, images, books)
+- By application environment (education, libraries, web)
+- By objective (administration, search, preservation)
+- By implementation (embedded or separate)
+- By level (low-level technical vs. high-level semantic features)
+
+### 5.2 **Standards**
+1. **Dublin Core (DC):**
+   - Basic resource description (ISO 15836)
+   - 15 core elements: Title, Creator, Subject, Description, Publisher, etc.
+   - Generic, interoperable, extensible
+
+2. **EBUCore:**
+   - Designed for radio and TV content
+   - "If you can't find it, you don't have it!" motto
+   - Supports creation, management, preservation, and exchange
+   - Elements include standard descriptive plus technical format aspects
+
+3. **Other Important Schemas:**
+   - **General:** XMP (ISO 16684)
+   - **Images:** Exif, JPSearch, JPOnto, VRA Core
+   - **Audiovisual:** MPEG-7, ID3
+   - **TV:** PIMeta, PBCore, SMPTE, TV-Anytime
+   - **Archives:** ISAD(G), OAI-PMH
+
+### 5.3 **Metadata Relationship to Content**
+- Can be separate from or embedded within content
+- Bridges the "semantic gap" between low-level features (resolution, bitrate) and high-level meaning (subject, genre)

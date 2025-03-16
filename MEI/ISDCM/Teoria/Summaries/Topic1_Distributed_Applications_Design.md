@@ -183,11 +183,14 @@
   ```
 
 - **Status Codes**:
-  - **1xx**: Informational (e.g., 100 Continue).
-  - **2xx**: Success (e.g., 200 OK, 201 Created).
-  - **3xx**: Redirection (e.g., 301 Moved Permanently).
-  - **4xx**: Client Error (e.g., 404 Not Found).
-  - **5xx**: Server Error (e.g., 500 Internal Server Error).
+
+| Code Range | Category | Example |
+|------------|----------|---------|
+| 1xx | Informational | 100 Continue |
+| 2xx | Success | 200 OK, 201 Created |
+| 3xx | Redirection | 301 Moved Permanently |
+| 4xx | Client Error | 404 Not Found |
+| 5xx | Server Error | 500 Internal Server Error |
 
 - **HTTP/2 Features**:
   - Does **not** change syntax.               
