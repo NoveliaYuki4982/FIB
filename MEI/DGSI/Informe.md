@@ -90,3 +90,77 @@ La gestió i organització d'una empresa poden veure's reflectides en el model d
 
 ## Lab 4 (13/3/2025)
 Hem fet un chatbot que funciona per línia de comandes que rep preguntes sobre la FIb i les respon. Ho fa gràcies al **RAG** (Retrieval Augmented Generation) que hem creat fent servir la pràctica anterior, que consistia en indexar la informació de la pàgina web de la FIB en chromaDB i obtenir-la en format markdown. Per més informació visitar aquest [link](https://github.com/DGSI-UPC/llm-chat-rag).
+
+## Teoria 5 (18/3/2025)
+### 1. Empresa
+- Missió / Visió
+- Objectius
+- Estructura / Organigrama
+- Política (jerarquia / autonomia / incentius / retribucions)
+- Sistema d'informació
+- Actors (inters/externs)
+- Fluxos d'informació
+- **Magatzems d'informació**
+
+### 2. Magatzems d'informació
+Abans es feien servir fluxos i magatzems d'informació estructurats: les bases de dades **SQL**. El seu principal objectiu era la integritat, de manera que és molt lent perquè es fan servir operacions atòmiques (locks). A partir d'això van aparèixer les bases de dades **NoSQL** que són ràpides i escalables. Ja no hi ha normalització i es podria haver fet amb SQL, però la gent no ho entenia i acabaven normalitzant igualment. D'aquesta manera, es fa servir SQL quan es demana integritat (comprar un bitllet d'avió) però quan la rapidesa és el més important (búsqueda de bitllets) llavors NoSQL és millor.
+
+### 3. L'eficiència no ho és tot
+Hi ha casos en què l'eficiència no és el més important, per exemple quan fiquem un rentavaixelles no dividim els coberts en tipus per després guardar-los fàcilment. Això passa també amb eines d'automatització com Python, no és el llenguatge més ràpid i eficient, però per executar poques línies de codi un o dos cops a la setmana és més que suficient.
+
+## Lab 5 (20/3/2025)
+Hem estudiat enginyeria de prompting per poder crear prompts consistents i bons perquè els LLMs ho entenguin.
+- Ser específic
+- Ficar exemples
+- Demanar alguna cosa
+- Formatejar el prompt
+- Demanar-li que ho faci pas per pas
+
+Seguint aquestes directrius li hem demanat a un LLM que ens faci el codi Mermaid (format per a dissenyar grafs i diagrames des de text) de la *timeline* de la Universitat de Salamanca.
+
+```
+create Mermaid.js code to create a Timeline Diagram. this Timeline Diagram must reflect the history of the university of salamanca, and to do this you need to follow the following steps:
+
+—
+1. find a website like wikipedia and identify the most relevant events with their corresponding date
+2. place the date of these events correctly in the Timeline Diagram using the date the event happened
+3. place the corresponding century for each date
+4. create the corresponding Mermaid.js code
+—
+
+write all the steps you are following to complete this task
+```
+
+I obtenim aquesta resposta:
+
+```mermaid
+timeline
+    title History of the University of Salamanca
+
+    section 13th Century
+        1218: Foundation by King Alfonso IX of León
+        1254: Organizational norms and financial endowments established by King Alfonso X
+        1255: Papal bulls by Pope Alexander IV recognizing universal validity of degrees
+
+    section 15th Century
+        1492: Antonio de Nebrija published the first Castilian grammar
+
+    section 16th Century
+        1584: Fray Luis de León resumed teaching after imprisonment
+
+    section 19th Century
+        1812: University activities interrupted during the Peninsular War
+
+    section 20th Century
+        1940: Post-Spanish Civil War restructuring
+        1988: Old City of Salamanca declared a UNESCO World Heritage Site
+
+    section 21st Century
+        2018: 800th anniversary celebration
+```
+
+Al RAG que teníem de pràctiques anteriors li hem afegit un glossari de termes de la FIB perquè a la hora de buscar sigles d'assignatures (DGSI) o de termes específics de la universitat (ECTS) entengui de què estem parlant. El link al projecte és el mateix que el lab anterior: [link](https://github.com/DGSI-UPC/llm-chat-rag).
+
+## Teoria 6 (25/3/2025)
+
+## Lab 6 (27/3/2025)
