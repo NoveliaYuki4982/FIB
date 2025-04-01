@@ -162,5 +162,49 @@ timeline
 Al RAG que teníem de pràctiques anteriors li hem afegit un glossari de termes de la FIB perquè a la hora de buscar sigles d'assignatures (DGSI) o de termes específics de la universitat (ECTS) entengui de què estem parlant. El link al projecte és el mateix que el lab anterior: [link](https://github.com/DGSI-UPC/llm-chat-rag).
 
 ## Teoria 6 (25/3/2025)
+### Com Hem Arribat a les Empreses d'Avui? Una Mica d'Història
+Bàsicament, el que ens va explicar el profe és que per pillar com funcionen les empreses i els sistemes d'informació avui dia, cal mirar enrere. És com si les idees s'haguessin anat posant una sobre l'altra, com capes. Va posar l'exemple de Barcelona: no pots entendre com és ara sense saber què hi havia abans, oi? Doncs amb les empreses, igual.
+
+#### 1. Llavors, com es van fer riques les nacions? Adam Smith al rescat
+Tot va començar amb un senyor, Adam Smith, que es preguntava per què alguns països eren rics i altres no. En aquella època, Espanya rebia molta pasta d'Amèrica, però sembla que això no feia que el país en general anés molt millor.
+
+En canvi, a Anglaterra tenien un altre rotllo: els faltava gent per treballar la terra, així que van haver d'espavilar-se per fer que fos més productiva. D'aquí va sortir la idea de "progrés", de buscar maneres de fer les coses millor i més eficientment.
+
+#### 2. De l'Artesà a la Fàbrica: La Clau és Dividir la Feina
+Abans, un artesà feia un producte sencer ell sol. Això estava bé, però no es produïa gaire quantitat. Adam Smith es va fixar en una fàbrica d'agulles i va flipar: en comptes d'una persona fent tota l'agulla, cada treballador feia només una petita part (un tallava, l'altre feia la punta, etc.). Així produïen moltíssim més!
+
+Això va ser un canvi clau: van passar de fer un **procediment** (tots els passos fets per un) a un **procés** (cada persona fa una part especialitzada). Clar, si cadascú fa només una cosa, se l'ha de formar específicament per a aquella tasca.
+
+|             | Abans (Artesà)   | Després (Fàbrica)      |
+| ----------- | ---------------- | ---------------------- |
+| **Com es fa?** | Un fa tot      | Cadascú fa una part    |
+| **Quantitat?** | Poca             | Molta                  |
+| **Què cal saber?** | De tot una mica | Una cosa molt bé    |
+
+Amb tanta producció, sobrava material. Ja no era només per vendre al poble, sinó que podien començar a **exportar**, a vendre fora.
+
+#### 3. La Tecnologia Arriba Quan Fa Falta
+Una cosa curiosa és que la tecnologia, com els molins o la màquina de vapor, ja s'intuïa o existia d'alguna manera. Però no es van començar a fer servir massivament fins que les fàbriques, amb la gent especialitzada fent tasques manuals, van necessitar més potència. Quan va caldre de veritat, llavors sí que es va apostar per la màquina de vapor per moure les màquines. La necessitat va empènyer la tecnologia.
+
+#### 4. Caps, Trens i l'Hora Oficial
+Amb les fàbriques més grans, van aparèixer nous càrrecs: els encarregats, supervisors, directius... gent que organitzava la feina però que no sempre vivia allà mateix. Molts d'aquests "caps" nous anaven a la feina amb tren. I clar, per agafar el tren i perquè tothom comencés a treballar alhora, calien **horaris fixos**.
+
+Però hi havia un problema: l'hora (la del sol) no era exactament la mateixa a cada poble. Si el tren havia de sortir d'un lloc i arribar a un altre, quina hora feien servir? Van haver de posar-se d'acord i **sincronitzar els rellotges** utilitzant una referència única per a tothom: l'hora del **Meridià de Greenwich**. O sigui, que la necessitat d'organitzar les fàbriques i els viatges en tren va acabar fent que tinguem una hora estàndard a tot arreu.
+
+I així, de mica en mica, anant des de com es feien les agulles fins a com organitzar els horaris dels trens, es van anar posant les bases de com funcionen les empreses avui.
 
 ## Lab 6 (27/3/2025)
+L'objectiu d'aquest laboratori és agafar el RAG existent i implementar-hi noves *features*:
+
+- Fer la indexació automàticament
+- UI en un navegador
+- Tècniques per millorar el prompt entrat per l'usuari abans de passar-li a la IA
+- Poder-se desplegar amb Docker
+
+Han sortit dos projectes d'aquest laboratori, un que compleix els requeriments del laboratori [1](https://github.com/DGSI-UPC/llm-chat-rag) i un fet completament des de zero amb noves *features* [2](https://github.com/DGSI-UPC/chat-with-any-website):
+
+- Permet preguntar-li sobre qualsevol pàgina web entrada, no només sobre la FIB
+- Fa la indexació automàticament basada en link entrat
+- Té UI en un navegador
+- Fa servir tècniques de millora del prompt entrat per l'usuari
+- Es pot desplegar amb Docker
