@@ -208,3 +208,43 @@ Han sortit dos projectes d'aquest laboratori, un que compleix els requeriments d
 - Té UI en un navegador
 - Fa servir tècniques de millora del prompt entrat per l'usuari
 - Es pot desplegar amb Docker
+
+## Teoria 7 (1/4/2025)
+### 1. Inicis vs. Experiència: Startups i Empreses Consolidades
+
+* **Startups:** Comencen amb el mínim de gent possible. Tothom és essencial perquè pugui créixer. Si algú falta, es nota molt.
+* **Empreses establertes:** Ja tenen més estructura. Es parla del "factor autobús": quantes persones clau podrien faltar sense parar l'empresa. Com més gran el número, més resistent és.
+* **Evolució:** Les coses canvien. Abans, IBM comprava empreses de màquines amb targetes perforades. El telèfon va passar de ser un monopoli al permetre diferents fàbriques estandaritzar els seus processos a tenir competència per noves lleis que van sorgir per evitar aquests monopolis.
+
+### 2. La Importància de Fer les Coses Bé: Qualitat
+* **Què és la qualitat?** És simplement el grau en què un producte o servei compleix uns estàndards i especificacions.
+* **Exemple:** Els iogurts Pascual tenien premís de qualitat, però tècnicament no eren iogurts segons la definició estricta. Complien *unes* especificacions, però no *la* principal.
+* **Conseqüències:** La manca de qualitat pot ser greu. A la Guerra Civil dels EUA moltes lesions venien de defectes en les pròpies armes dels soldats perquè la probabilitat de que t'explotessin a la cara era la mateixa que ser disparat per l'enemic.
+* **Control de qualitat:** Per evitar problemes, es controla la qualitat en totes les fases del procés, no només al final. Es fa servir estadística per comprovar-ho.
+
+### 3. Maneres de Treballar: Processos i Projectes
+Hi ha dues formes principals d'organitzar la feina:
+
+1.  **Procés:**
+    * Són les tasques habituals, les que l'empresa ja sap fer i repeteix.
+    * Un **procediment** són les instruccions per a una persona en concret.
+    * Un **procés** és un conjunt de procediments coordinats per a un equip.
+2.  **Projecte:**
+    * Són tasques noves o que es fan per primera vegada.
+    * Tenen un inici i un final clars.
+
+* **Exemple TFM:**
+    * Per a un estudiant, fer el TFM és un **projecte** (és nou per a ell) i dir-li *Treball* és incorrecte, hauria de ser *Projecte de Fi de Màster*.
+    * Per a la universitat (FIB), gestionar tots els TFM cada any és un **procés** (és una tasca repetitiva i organitzada).
+
+| Característica | Procés                        | Projecte                      |
+| :------------- | :---------------------------- | :---------------------------- |
+| **Naturalesa** | Repetitiu, continu          | Únic, temporal                |
+| **Objectiu** | Eficiència, manteniment     | Resultat específic i nou    |
+| **Resultat** | Estàndard, previsible       | Nou, diferent                 |
+| **Familiaritat**| Conegut, dominat              | Nou, exploratori              |
+| **Exemple** | Gestionar nòmines           | Llançar un nou producte       |
+
+## Lab 7 (1/4/2025)
+Per a descriure processos es fa servir una eina gràfica anomenada **BPMN**. Per practicar a usar BPMN en aquest lab hem de descriure el procés per fer el TFG/TFM a la FIB.
+![](./imatges/bpmn.png)
