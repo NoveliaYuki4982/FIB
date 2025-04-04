@@ -19,7 +19,7 @@
   - (**Preservation**): Maintaining content over time (altought it may also apply to digital content, is less relevant).
   - **Deletion**: Removing multimedia content when no longer needed.
 
-### 1.2 **Elements Relevant Throughout the Life-cycle**:
+### 1.2 **Elements Relevant Throughout the Life-cycle**
 
 | Concept | Description |
 |-------|---------------|
@@ -53,14 +53,30 @@
     - Software, e-books, document formats
     - Structures and containers
   - **MIME Content Types**: Standardized types for internet use, an alternative approach:
-    | | |
-    |-------------|-------------|
-    | Application | Message |
-    | Audio       | Model |
-    | Example     | Multipart |
-    | Font        | Text |
-    | Haptics     | Video |
-    | Image       | |
+    <table>
+      <tbody>
+        <tr>
+          <td>Audio</td>
+          <td>Model</td>
+        </tr>
+        <tr>
+          <td>Example</td>
+          <td>Multipart</td>
+        </tr>
+        <tr>
+          <td>Font</td>
+          <td>Text</td>
+        </tr>
+        <tr>
+          <td>Haptics</td>
+          <td>Video</td>
+        </tr>
+        <tr>
+          <td>Image</td>
+          <td>Applicatione</td>
+        </tr>
+      </tbody>
+    </table>
 
   - **Captured/Scanned vs. Synthetized**: Content can be recorded from reality or artificially generated.
     |Captured/Scanned|Syntetized      |
@@ -177,6 +193,7 @@
 #### 3.1.4 **Key Concepts**
   - All unicode standards are **not** as efficient as ASCII in space terms for ASCII characters.
   - **UTF-8 is more efficient** for languages that use **latin alphabet** while **UTF-16 is more efficient** in **character languages like Japanese**.
+  - See Unicode.pdf for more detailed information.
 
 ### 3.2 Audio
 
@@ -259,12 +276,11 @@
   - HEIC: An implementation of HEIF mainly supported by Apple.
   - WebP: Includes a RIFF-based container from Google. Web-oriented.
   - JPEG-XL: ISO/IEC 18181, web-oriented, JPEG-1 compatible.
-#### 3.3.3 **Key Concept**:
-Image formats originally where complettelly separated from Video formats, but lately it has been found that the encodings made for Videos are better for encoding images.
-  - Some Image formats that come from video:
-    - **AVIF: Comes from AV1**
-    - **HEIF: Comes from HEVC.**
-    - **Webp: Comes from VP8**
+#### 3.3.3 **Key Concepts**
+Image formats originally where complettelly separated from Video formats, but lately it has been found that the encodings made for Videos are better for encoding images. Some Image formats that come from video:
+  - **AVIF: Comes from AV1**
+  - **HEIF: Comes from HEVC.**
+  - **Webp: Comes from VP8**
 
 ### 3.4 Video
 - Three-dimensional content type (2D space + time).
