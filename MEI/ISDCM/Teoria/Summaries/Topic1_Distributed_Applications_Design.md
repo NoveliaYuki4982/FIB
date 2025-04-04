@@ -66,24 +66,11 @@
     - OSI Presentation and Session layers are part of the Internet Application layer.
 
 - **Protocol Data Units (PDUs)**:
-  - **Transport Segment**: 
-    ```
-    | T-H | Transport data |
-    ```
-    - T-H: Transport Header
-  - **IP Datagram**: 
-    ```
-    | IP-H | IP data |
-    ```
-    - IP-H: IP Header
-  - **Data Link Frame**: 
-    ```
-    | DL-H | IP-H | T-H | Application data | DL-T |
-    ```
+  ![Protocol Data Units](Images/pdu.png)
     - DL-H: Data Link Header, DL-T: Data Link Trailer
   - **Purpose**: Encapsulates data with headers/trailers at each layer for transmission.
 
-- **Communication**: Hosts communicate through routers, with data encapsulated and de-encapsulated across layers.
+- **Communication**: Hosts communication through routers, with data encapsulated and de-encapsulated across layers.
 
 ### 1.3 MIME (Multipurpose Internet Mail Extensions)
 
@@ -115,8 +102,9 @@
   - **7-bit SMTP**: `7bit`, `quoted-printable`, `base64`.
   - **8-bit SMTP Extensions**: `8bit`, `binary` (RFC 1652, 6152).
   - **Base64**:
-    - Converts 8-bit bytes to 6-bit values mapped to 64 ASCII characters (A-Z, a-z, 0-9, +, /).
-    - Process: 3 bytes (24 bits) → 4 encoded characters (33% inefficiency).
+    - Converts 8-bit bytes to 6-bit values mapped to 64 ASCII characters (A-Z, a-z, 0-9, +, /) and adds two 0's a the most left.
+    ![Base64](Images/base64.png)
+    - Process: 3 bytes (24 bits) → 4 encoded characters (33% **inefficiency**).
     - Example Table:
       ```
       Value  Encoding
@@ -157,7 +145,7 @@
   - **No Modification**:
     - `GET`: Retrieves a resource.
     - `HEAD`: Like GET, but without the body.
-    - `TRACE`: Echoes the request.
+    - `TRACE`: Echoes back the received request.
     - `OPTIONS`: Lists supported methods.
   - **Modification**:
     - `POST`: Submits data (e.g., forms, database updates).
@@ -197,27 +185,9 @@
   - **Multiplexing**: multiple streams over one connection.
   - **Header Compression**: reduces overhead.
   - **Server Push**: proactive resource delivery (server does not need to receive a request in order to send a response).
-  - **Frame Format**:
-    ```
-    Length (24) | Type (8) | Flags (8) | R | Stream Identifier (31)
-    Frame Payload (0...)
-    ```
+  - **Frame Format**: 9-octer header.
+    ![Frame Format for HTTP2](Images/frame_format_http2.png)
   - **Frame Types**: `DATA`, `HEADER`, `PRIORITY`, `RST_STREAM`, `PING`, etc.
-
-- **Examples**:
-  - **GET Request**:
-    ```
-    GET /search?q=myBook HTTP/1.1
-    Host: www.google.com
-    Accept: text/html
-    ```
-  - **GET Response**:
-    ```
-    HTTP/1.1 200 OK
-    Date: Fri, 17 Sep 2009 07:59:01 GMT
-    Content-Type: text/html
-    Content-Length: 2810
-    ```
 
 ---
 
@@ -252,7 +222,7 @@
     </book>
   </bookstore>
   ```
-  > Contains elements (`book`, `title`, `author`, `year`), attributes (`lang`), and text (`XML`, `John Smith`, `2018`).
+  > Contains elements (`book`, `title`, `author`, `year`, `price`), attributes (`category`, `lang`), and text (`Everyday Italian`, `Giada De Laurentiis`, `2005`, `30.00`).
 
 - **Namespaces**:
   - Prevent name conflicts using `xmlns` (e.g., `xmlns:prefix="URI"`).
@@ -265,7 +235,7 @@
   - **Syntax**:
     - Written in XML, using XML Schema language (XSD).
     - Referenced in XML instances using `xsi:schemaLocation`.
-  - Example of file `note.xsd`:
+  - Example of file `note.xsd` (defines a schema):
     ```xml
     <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
       <xs:element name="note">
@@ -405,7 +375,7 @@ This section provides in-depth coverage of web services, focusing on WSDL, SOAP,
     - Terminology: `portType` (1.1) vs. `interface` (2.0), `port` (1.1) vs. `endpoint` (2.0).
     - Syntax and structure changes, not just naming.
 
-- **Structure**:
+- **Structure WSDL 2.0**:
   1. **Namespaces**:
     - Define namespaces used for this connection.
     - Standard namespaces (e.g., `http://www.w3.org/ns/wsdl`, `http://www.w3.org/2001/XMLSchema`).
@@ -425,8 +395,13 @@ This section provides in-depth coverage of web services, focusing on WSDL, SOAP,
   2. **Types**:
     - Define data structures using XML schemas.
     - In example 1 we are simply describing a data type.
-    - In example 2 we are creating a schema caslled xs for these data types so that in the future we can reuse them.
+    - In example 2 we are creating a schema called xs for these data types so that in the future we can reuse them.
+    - `<element>` attribute:
+      - minOccurs = 0 --> optional
+      - maxOccurs = unbounded --> infinite
+      - none --> we assume there is only one instance
     - `<xs:all>` means that all children appear in any order.
+
       ```xml
       <!-- Example 1 -->
       <element name="getTermRequest">
@@ -620,7 +595,9 @@ This section provides in-depth coverage of web services, focusing on WSDL, SOAP,
   - **Steps**:
     1. Define new types in `<types>` (e.g., using XML schemas).
     2. Add new messages (WSDL 1.1) or input/output elements (WSDL 2.0).
-    3. Add new operations to the interface/portType.
+    3. Two options:
+        - Add operation inside `portType` (1.1) or inside `interface` (2.0).
+        - Add a new `portType`/`interface` with the  new operation.
     4. Update bindings and services as needed.
   - **Example (Adding `searchVideosByTitle`)**:
     - New types:
