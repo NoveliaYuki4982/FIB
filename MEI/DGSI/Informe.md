@@ -248,3 +248,61 @@ Hi ha dues formes principals d'organitzar la feina:
 ## Lab 7 (1/4/2025)
 Per a descriure processos es fa servir una eina gràfica anomenada **BPMN**. Per practicar a usar BPMN en aquest lab hem de descriure el procés per fer el TFG/TFM a la FIB.
 ![](./imatges/bpmn.png)
+
+## Teoria 8 (22/4/2025)
+### 1. Proposta de Valor i Entorn Competitiu
+
+Comencem per entendre la **proposta de valor**. Moltes entitats públiques són deficitàries com els bombers o una universitat pública. A Roma els bombers compraven propietats en flames com a condició per apagar el foc, de manera que sortia més barata la casa. En aquestes organitzacions tenir beneficis és rar, i tenir-ne et fa plantejar la seva eticitat. En canvi, les empreses privades tenen com a objectiu fonamental generar beneficis. Operen en un mercat on competeixen constantment amb altres empreses.
+
+En aquest entorn dinàmic, l'adopció de **noves tecnologies** és un factor crític. Les empreses s'enfronten contínuament a la decisió d'incorporar o no aquestes innovacions. Aquesta decisió comporta riscos significatius que cal avaluar amb cura:
+
+1.  **Risc d'adoptar sense èxit:** Invertir recursos (temps, diners, esforç) en una tecnologia que finalment no aporta l'eficiència o l'avantatge esperat.
+2.  **Risc de no adoptar i quedar obsolet:** Si els competidors adopten una tecnologia disruptiva i la nostra empresa no ho fa, podem perdre quota de mercat i, en casos extrems, fins i tot desaparèixer.
+
+És essencial, per tant, que les empreses analitzin constantment si els beneficis potencials d'un canvi tecnològic superen els riscos inherents.
+
+### 2. Els Diners Costen Diners: El Cost Financer i el Flux de Caixa
+
+Un concepte fonamental en la gestió empresarial és que **"els diners costen diners"**. Això fa referència al cost d'oportunitat i als costos financers associats a la gestió del capital.
+
+Considerem un exemple pràctic: un autònom que factura 100.000€ a una empresa com NISSAN (més 16.000€ d'IVA). D'aquests 100.000€ ingressats, aproximadament 20.000€ aniran a Hisenda (IRPF), deixant 80.000€ nets inicialment. Si aquest autònom té 5 treballadors, i destina 50.000€ a sous (10.000€ per treballador), cal recordar que d'aquests 10.000€ bruts, uns 2.000€ aniran a Hisenda i Seguretat Social, quedant 8.000€ nets pel treballador. Això deixa a l'autònom amb 30.000€, dels quals encara ha de cobrir altres despeses operatives (lloguer, servidors, subministraments, etc.).
+
+A més, s'hi afegeixen els reptes del **flux de caixa**: NISSAN pot pagar la factura a 6 mesos vista, mentre que la devolució de l'IRPF per part d'Hisenda pot arribar al setembre de l'any següent. Gestionar aquests desfasaments temporals és crucial per a la supervivència del negoci.
+
+### 3. La Importància de la "Killer App"
+
+Perquè una **revolució tecnològica** tingui èxit i una adopció massiva, sovint necessita una **"killer app"** o aplicació estrella. Aquesta és una funcionalitat o servei tan atractiu que impulsa l'adopció de la tecnologia subjacent.
+
+L'exemple paradigmàtic és l'**smartphone**, la "killer app" del qual va ser **WhatsApp**. Als anys 2000, el mercat de mòbils estava dominat per empreses europees (Nokia, Ericsson, Alcatel), en part gràcies a l'estàndard europeu GSM. En aquell model, cada missatge de text (SMS) tenia un cost. WhatsApp va irrompre oferint missatgeria instantània gratuïta (sobre connexió de dades), trencant el model de negoci existent i accelerant l'adopció dels smartphones.
+
+Per tant, quan ens presenten una nova tecnologia amb la promesa de ser revolucionària, una pregunta clau que ens hem de fer és: **quina és la seva "killer app"?** Si no n'hi ha una de clara, el seu potencial disruptiu pot ser més qüestionable.
+
+### 4. Materials Requirements Planning (MRP)
+
+Les empreses manufactureres s'han enfrontat històricament a un problema complex: la **planificació dels materials** necessaris per a la producció. El flux típic implica rebre components de proveïdors, emmagatzemar-los, utilitzar-los a la fàbrica per produir béns, tornar a emmagatzemar el producte acabat i finalment distribuir-lo.
+
+La pregunta clau és: **quan i en quina quantitat s'han de demanar els components als proveïdors?** Emmagatzemar grans quantitats de material té inconvenients importants:
+
+* **Cost financer:** Els diners invertits en estoc no estan disponibles per a altres usos ("els diners costen diners").
+* **Risc d'obsolescència:** Els canvis en el mercat o en la tecnologia poden fer que l'estoc perdi valor.
+* **Costos d'emmagatzematge:** Mantenir magatzems físics és car (lloguer, personal, assegurances, etc.).
+
+La manca de components pot aturar la producció, generant costos enormes (es menciona un exemple històric d'una fàbrica d'electrodomèstics on cada hora parada costava milions). Per evitar-ho, es va desenvolupar el **pla de producció**, un document detallat que descriu tot el procés de fabricació: materials, peces, especificacions, màquines necessàries, i la seqüència d'operacions (sovint visualitzat amb **diagrames de Gantt**).
+
+Davant del problema de l'inventari, van sorgir dues solucions principals:
+
+1.  **Mantenir un "buffer" o estoc de seguretat:** Tenir més peces de les estrictament necessàries. Això redueix el risc de parades, però incrementa els costos financers i d'emmagatzematge.
+2.  **Utilitzar sistemes MRP (Materials Requirements Planning):** Programari dissenyat per calcular amb precisió les necessitats de materials i la capacitat de producció, permetent demanar només el necessari en el moment adequat. Això optimitza l'ús dels recursos, redueix costos i permet ser més eficient, la qual cosa es tradueix en un **avantatge competitiu**.
+
+Els primers sistemes MRP eren tecnològicament primitius (funcionaven en llenguatge assemblador, utilitzaven targetes perforades per a l'entrada de dades) i van impulsar el desenvolupament de les primeres bases de dades empresarials.
+
+### 5. El Mètode "Just in Time" (JIT)
+
+Una filosofia alternativa, desenvolupada principalment al Japó, és el **"Just in Time" (JIT)**. La idea central és produir només quan hi ha una demanda confirmada per part del client. En lloc d'acumular inventari, les peces es compren i es fabriquen just a temps per satisfer la comanda.
+
+El gran avantatge del JIT és l'**eliminació o reducció dràstica dels costos d'emmagatzematge**. Això requereix una coordinació extremadament precisa amb els proveïdors. S'estableixen acords ("Agreements") que fixen el dia i l'hora exacta d'entrega dels components. L'incompliment d'aquests terminis comporta **penalitzacions** estrictes. Encara que el cost per peça pugui ser lleugerament superior sota aquest model, l'estalvi en magatzem pot compensar-ho àmpliament.
+
+L'auge del JIT va impulsar el desenvolupament de les **empreses de logística** modernes, especialitzades a garantir aquestes entregues precises. A més, el JIT transforma la visió del producte: ja no és només l'objecte físic, sinó un **servei** que inclou la garantia de certes certificacions, qualitats i, sobretot, la disponibilitat en un lloc i moment concrets.
+
+## Lab 8 (24/4/2025)
+Aquest laboratori consisteix en crear una aplicació que permet gestionar el stock d'una fàbrica de producció d'impresores 3D. Per veure el projecte ves [aquí](https://github.com/DGSI-UPC/3d-printer-mrp) i per veure els requeriments ves [aquí](Proyecto%20de%20Sistemas%20de%20Información.pdf).
