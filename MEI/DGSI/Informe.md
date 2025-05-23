@@ -306,3 +306,83 @@ L'auge del JIT va impulsar el desenvolupament de les **empreses de logística** 
 
 ## Lab 8 (24/4/2025)
 Aquest laboratori consisteix en crear una aplicació que permet gestionar el stock d'una fàbrica de producció d'impresores 3D. Per veure el projecte ves [aquí](https://github.com/DGSI-UPC/3d-printer-mrp) i per veure els requeriments ves [aquí](Proyecto%20de%20Sistemas%20de%20Información.pdf).
+
+## Teoria 9 (6/5/2025)
+### 1. La Transformació Digital: Des dels Sistemes Transaccionals fins a la Proliferació del PC
+
+L'àmbit empresarial ha estat testimoni d'una profunda metamorfosi impulsada per l'evolució tecnològica. Aquest procés ha redefinit la gestió operativa, l'adopció d'eines informàtiques i les metodologies de desenvolupament, generant al seu torn nous desafiaments.
+
+### 2. Els Pilars de la Gestió Moderna: OLTP, ERP i l'Optimització d'Inventaris
+
+En les etapes inicials de la informatització empresarial, es va fer palesa la necessitat de sistemes robustos per al processament de les operacions quotidianes. L'OLTP (Online Transaction Processing) va sorgir com una solució crucial, dissenyada per administrar l'atomicitat de les transaccions SQL. Això assegurava que operacions com vendes, compres o moviments d'inventari es completessin de manera íntegra i fiable.
+
+Paral·lelament, la planificació global dels recursos empresarials va trobar resposta en els sistemes ERP (Enterprise Resource Planning). Aquestes plataformes integrals facilitaven una visió unificada de l'empresa, permetent una previsió d'estoc més acurada i la implementació de filosofies productives com el "Just in Time". Aquest últim mètode cercava l'optimització dels nivells d'inventari i dels processos de producció per minimitzar costos i maximitzar l'eficiència.
+
+### 3. La Implantació Progressiva de la Informàtica: Les Fases de Nolan
+
+L'adopció de la informàtica a les organitzacions no va ser un esdeveniment sobtat, sinó un procés gradual que sovint seguia un patró identificable, descrit per les Corbes de Nolan. Aquest model representa la inversió en tecnologia en relació amb el temps i els beneficis obtinguts, i es desenvolupa típicament en diverses fases:
+
+* **Fase Inicial**: La informàtica i els primers ordinadors s'introdueixen en un departament específic. L'impacte sol ser immediat, amb un increment exponencial de la productivitat i la capacitat d'assumir una major varietat de tasques dins d'aquella àrea.
+* **Fase de Contagi**: Els resultats positius observats en el departament pioner generen interès i una certa "enveja" en altres àrees de l'organització, que ràpidament manifesten el seu desig d'incorporar també solucions informàtiques.
+* **Fase d'Integració**: La proliferació d'aplicacions departamentals aïllades condueix a la necessitat de consolidació. Sorgeix la figura que impulsa la integració de les diverses eines en una plataforma unificada per millorar la coherència i el control. Aplicacions com Excel es van convertir en eines essencials ("killer apps") per a molts usuaris. Tanmateix, eines com Access, orientades a la gestió de dades que facilitaven el pas de la fase 1 a la 2, de vegades eren rebudes amb reticència, ja que l'objectiu final de governar la informació requeria una integració completa, un procés que sovint resultava complex i costós. Un exemple il·lustratiu d'aquesta problemàtica es va donar quan el Col·legi d'Enginyers Industrials va voler centralitzar la informació dels seus col·legiats i es va trobar amb més de 30 versions diferents de bases de dades distribuïdes en múltiples sistemes.
+
+Aquestes tres primeres etapes (iniciació, contagi i integració) no són exclusives de la informàtica, sinó que es repliquen en l'adopció de la majoria de les noves tecnologies. Les fases posteriors del model de Nolan aborden la maduresa en la gestió de les dades i l'arquitectura de sistemes.
+
+## Lab 9 (8/5/2025)
+L'objectiu d'aquest laboratori és fer servir browser-use i aconseguir que respongui unes preguntes que tenim en un document de Google Docs. Per fer-ho la llibreria farà servir reconeixement d'elements, llegirà el text, buscarà la informació a Internet i automàticament escriurà les respostes al document.
+
+## Teoria 10 (20/5/2025)
+### 1. Reflexions sobre Sistemes d'Informació, Innovació i Trajectòries Tecnològiques
+
+En l'anàlisi actual dels Sistemes d'Informació dins les organitzacions, observem una evolució constant que ens obliga a revaluar enfocaments prèviament considerats fonamentals. Algunes perspectives del passat, com una aplicació potser massa dogmàtica de la Programació Orientada a Objectes o la consideració de l'arquitectura Client-Servidor com a solució universal, es poden interpretar avui com a "passos en fals" o, més precisament, etapes d'un aprenentatge continu cap a models més integrats i flexibles. La comprensió actual busca anar més enllà d'aquestes visions, integrant-les en un panorama tecnològic i estratègic més ampli.
+
+### 2. La Veritable Naturalesa de la Innovació: Més Enllà de la Tecnologia
+
+Sovint es confon la innovació tecnològica amb la simple aparició d'una nova eina o plataforma. No obstant això, la veritable innovació rau en la seva capacitat de transformar les persones: els seus hàbits, les seves interaccions i la seva manera d'entendre el món. No es tracta només de la tecnologia per si mateixa, sinó de l'impacte que genera en la societat i en els individus.
+
+Considerem alguns exemples:
+* **Bola de Drac:** Més enllà de ser una sèrie d'animació, va generar un impacte cultural tan profund que va motivar a molts catalans a interessar-se per la cultura japonesa i, fins i tot, a viatjar al Japó.
+* **Les Princeses Disney:** Han modelat durant generacions la percepció de certs rols i aspiracions, influint en la construcció d'imaginaris col·lectius.
+* **Google:** Ha transformat radicalment la manera com accedim a la informació, aprenem i prenem decisions, convertint-se en una eina omnipresent en la vida quotidiana de milions de persones.
+* **L'Automòbil:** La seva introducció no només va ser un avenç en el transport, sinó que va reconfigurar les ciutats, va transformar els patrons de residència i treball, i va modificar profundament l'estructura social i econòmica.
+
+En el context empresarial, la innovació disruptiva rarament prové de directives o alts càrrecs (amb l'excepció notable dels fundadors visionaris). Més aviat, emergeix quan els **empleats i usuaris comencen a adoptar i experimentar amb noves eines o processos de manera orgànica**. És aquesta adopció de base la que, un cop demostra el seu valor, s'acaba integrant en l'estratègia digital formal de l'organització.
+
+### 3. Visions Exponencials: Kurzweil i Diamandis
+
+Dos pensadors clau que han explorat profundament les dinàmiques del canvi tecnològic i les seves implicacions són Ray Kurzweil i Peter Diamandis. Les seves anàlisis sobre el creixement exponencial i les etapes de la digitalització ofereixen un marc poderós per entendre el ritme accelerat de la transformació actual. És notable que les seves prediccions han demostrat una taxa d'encert superior al 80%.
+
+#### 3.1 Ray Kurzweil: La Llei dels Rendiments Accelerats i la Singularitat
+
+Ray Kurzweil, en el seu influent treball sobre la singularitat tecnològica, argumenta que el progrés tecnològic, especialment en l'àmbit de la computació, segueix una corba exponencial. Aquesta idea s'associa sovint amb la Llei de Moore (que postula la duplicació del nombre de transistors en un circuit integrat aproximadament cada dos anys). Tanmateix, Kurzweil va més enllà.
+
+Ell no es va fixar únicament en la densitat de transistors per polzada quadrada, sinó en una mètrica més àmplia: la **capacitat de computació per dòlar invertit**. Analitzant l'evolució a través de cinc paradigmes tecnològics diferents (des de les targetes perforades fins als circuits integrats), Kurzweil va observar que, en una escala logarítmica, aquesta relació entre cost i potència de càlcul dibuixava una línia recta sorprenentment uniforme. Aquesta progressió constant i exponencial, segons les seves projeccions, tendeix cap a una asímptota, un punt de canvi radical o "singularitat", que ell situa al voltant de l'any 2040.
+
+#### 3.2 Peter Diamandis: Abundància i les Etapes de la Transformació Digital (Les 6 "D")
+
+Peter Diamandis, conegut pel seu llibre "Abundance: The Future Is Better Than You Think", complementa la visió de Kurzweil. Ell sosté que la convergència de múltiples tecnologies exponencials està creant un futur d'abundància sense precedents. Una idea central en el seu pensament és que quan qualsevol producte, servei o procés entra en l'esfera tecnològica i es **digitalitza**, comença a regir-se per la dinàmica de la Llei de Moore i, per tant, entra en una fase de creixement exponencial.
+
+Diamandis descriu un model de sis etapes (les "6 D") que caracteritzen aquest procés de transformació digital:
+
+1. **Digitalització (Digitized):** El primer pas és la conversió d'allò físic o analògic a un format digital. Un cop alguna cosa és representable per uns i zeros, esdevé fàcil de copiar, distribuir i manipular.
+
+2. **Deceptiva (Deceptive):** En les seves fases inicials, una nova tecnologia digital sovint sembla poc potent i el seu creixement és lent. Pot ser fàcilment subestimada perquè el seu rendiment inicial no supera el de les solucions analògiques establertes. Exemples clàssics inclouen les primeres versions de GPT (com GPT-1) o els inicis de Kodak amb les càmeres digitals, que no semblaven una amenaça per al seu negoci de pel·lícula tradicional.
+
+3. **Disruptiva (Disruptive):** Arriba un punt en què la tecnologia digital, gràcies al seu creixement exponencial, supera sobtadament en rendiment, cost o conveniència la seva contrapart analògica o tradicional. És el moment en què la "decepció" es converteix en "disrupció". La fotografia digital, per exemple, va arribar a un punt on la qualitat i la immediatesa van superar la pel·lícula tradicional. Actualment, els telèfons mòbils incorporen càmeres d'alta qualitat, fent que gairebé tothom porti una càmera potent a la butxaca.
+
+4. **Desmonetització (Demonetized):** A mesura que la tecnologia es torna més accessible i eficient, el cost marginal d'ús tendeix a zero. Abans, fer una fotografia tenia un cost (pel·lícula, revelat), i enviar un missatge implicava un segell o el cost d'un SMS. Avui, fer milers de fotos digitals o enviar missatges instantanis té un cost incremental pràcticament nul per a l'usuari.
+
+5.  **Desmaterialització (Dematerialized):** Els objectes físics comencen a desaparèixer, substituïts per les seves versions digitals. Els àlbums de fotos físics han cedit pas a les galeries digitals al núvol; els mapes en paper, als sistemes GPS; els reproductors de música, a les aplicacions de streaming.
+
+6.  **Democratització (Democratized):** Finalment, l'accés a aquestes tecnologies es torna universal i assequible per a gairebé tothom. La potència que abans estava reservada a grans corporacions o governs ara està a l'abast de qualsevol individu amb un smartphone. Això contrasta amb el mercat dels béns de luxe: si tothom pogués permetre's un Rolex, la marca perdria el seu valor associat a l'exclusivitat. La democratització tecnològica, en canvi, expandeix massivament l'accés i l'ús.
+
+### 4. La Clau de la Transició: La Interfície Simplificadora
+
+El pas crític des de l'etapa deceptiva a la disruptiva sovint es produeix quan apareix una **interfície d'usuari** que aconsegueix amagar la complexitat inherent de la nova tecnologia, fent-la accessible i fàcil d'utilitzar per a un públic ampli.
+
+Per exemple, el desenvolupament web als seus inicis (al voltant de l'any 2007 i abans) requeria un coneixement tècnic profund i sovint implicava "inventar-ho tot" des de zero. L'aparició de tecnologies i plataformes com HTML5, JavaScript (i els seus frameworks), WordPress, i altres sistemes de gestió de continguts, van crear capes d'abstracció que van simplificar enormement el procés, permetent que moltes més persones poguessin crear i gestionar llocs web sense necessitat de ser experts en programació de baix nivell. Aquesta simplificació va ser clau per a l'explosió de la web.
+
+Una reflexió final, potser més orientada a l'àmbit professional pràctic, és la constatació que **la recerca de feina i les oportunitats professionals es construeixen, en gran manera, a través d'una xarxa de contactes sòlida i ben gestionada.** El "networking" continua sent un element fonamental en el desenvolupament de la carrera.
+
+## Lab 10 (22/5/2025)
+En aquest laboratori hem après a fer servir Claude Desktop amb MCPs que altres persones ofereixen de manera open source per a l'ús de tothom. La base és tenir el teu LLM i poder-li demanar que faci accions (**agents**), i epr a poder-ho fer hi ha moltes maneres. El MCP és un estàndard, un protocol, que s'ha adoptat de manera molt i molt ràpida (en uns 4-5 mesos) i que s'està fent servir molt actualment. Cada servidor MCP pot tenir un ús i funcions, i el LLM va fent servir el que necessita segons el que li demanis. Aquí adjunto un YouTuber que ho explica molt bé: [https://www.youtube.com/watch?v=wnHczxwukYY](https://www.youtube.com/watch?v=wnHczxwukYY).
