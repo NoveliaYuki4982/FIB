@@ -386,3 +386,15 @@ Una reflexió final, potser més orientada a l'àmbit professional pràctic, és
 
 ## Lab 10 (22/5/2025)
 En aquest laboratori hem après a fer servir Claude Desktop amb MCPs que altres persones ofereixen de manera open source per a l'ús de tothom. La base és tenir el teu LLM i poder-li demanar que faci accions (**agents**), i per a poder-ho fer hi ha moltes maneres. El MCP és un estàndard, un protocol, que s'ha adoptat de manera molt i molt ràpida (en uns 4-5 mesos) i que s'està fent servir molt actualment. Cada servidor MCP pot tenir un ús i funcions, i el LLM va fent servir el que necessita segons el que li demanis. Aquí adjunto un YouTuber que ho explica molt bé: [https://www.youtube.com/watch?v=wnHczxwukYY](https://www.youtube.com/watch?v=wnHczxwukYY).
+
+ ## Teoria 11 (27/5/2025)
+Un agent és una entitat, ja sigui software o hardware, capaç de percebre el seu entorn mitjançant sensors i d'actuar sobre aquest entorn mitjançant actuadors. L'objectiu principal d'un agent és assolir metes específiques de manera autònoma, adaptant el seu comportament a les condicions canviants que detecta.
+
+El model **REACT** (REason and ACTing, que es tradueix com Raonar i Actuar) descriu el cicle fonamental de funcionament d'un agent intel·ligent. Aquest model emfatitza dues capacitats clau: primer, la capacitat de raonar sobre la informació percebuda i el coneixement que posseeix per entendre la situació actual i, segon, la capacitat d'actuar de manera coherent amb aquest raonament per modificar l'entorn o assolir els seus objectius.
+
+En la pràctica, els agents apliquen processos de raonament per analitzar la informació disponible, avaluar les possibles opcions i determinar el millor curs d'acció. Un cop completat aquest procés de deliberació interna, l'agent pren una decisió. Aquesta decisió es tradueix en una o diverses accions concretes que executarà.
+
+Per dur a terme aquestes accions, els agents sovint depenen d'un conjunt d'eines o habilitats. Aquestes eines poden ser funcions internes, accés a bases de dades, comunicació amb altres agents o, com s'ha mencionat, la interacció amb sistemes externs a través de mecanismes com pot ser un MCP (Multi-Client Platform o un concepte similar segons el context específic de la classe), que els permeten executar les seves tasques de manera efectiva. 
+
+ ## Lab 11 (27/5/2025)
+ En aquest laboratori hem agafat la idea del web scrapper feta anteriorment però li hem afegit un agent. Funciona d'una manera molt similar: primer mira si és una URL: si ho és, fa servir la tool de scrappejar la web, després crida la tool d'indexar a la base de dades vectorial el resultats del scrapping, i finalment si no ve una URL busca a la base de dades vectorial indexada com respondre a la pregunta de l'usuari. Per trobar el projecte anar [https://github.com/DGSI-UPC/barbones-agent](aquí).
